@@ -1,6 +1,7 @@
-import Header from '../header';
-import * as S from './styles';
 import React from 'react';
+import Icon from '../icons';
+import * as S from './styles';
+import Header from '../header';
 
 const HomeBless = () => {
     return (
@@ -17,7 +18,15 @@ const HomeBless = () => {
                     have got you covered.
                 </S.Text>
                 <S.Button>Book a haircut</S.Button>
-                <button>Book a haircut</button>
+
+                <S.Social>
+                    <div>
+                        <Icon icon="tiktok" height="24px" width="24px" />
+                    </div>
+                    <div>
+                        <Icon icon="facebook" height="24px" width="24px" />
+                    </div>
+                </S.Social>
             </S.Content>
         </S.Section>
     );

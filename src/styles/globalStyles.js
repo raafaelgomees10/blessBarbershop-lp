@@ -9,4 +9,8 @@ export const GlobalStyles = createGlobalStyle`
         font-family: ${(props) => props.theme.font.family3};
         font-size: 62.5%;
     }
+    html, body{
+        background-color: #090909;
+
+    }
 `;

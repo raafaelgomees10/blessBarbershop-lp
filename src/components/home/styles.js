@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import homeBg from '../../../public/images/home-bg.png';
 
 export const Section = styled.section`
-    background: url(${homeBg.src}) lightgray 50% / cover no-repeat;
+    background: url(${homeBg.src}) 50% / cover no-repeat;
 `;
 
 export const Content = styled.div`
@@ -13,7 +13,6 @@ export const Content = styled.div`
 
 export const Title = styled.h1`
     color: ${(props) => props.theme.colors.primary};
-    color: #f2dac2;
     -webkit-text-stroke-color: #000;
     -webkit-text-stroke-width: 2px;
     font-family: ${(props) => props.theme.font.family};
@@ -55,4 +54,19 @@ export const Button = styled.button`
     text-transform: uppercase;
     cursor: pointer;
     margin: 48px 0 80px;
+    border-radius: 4px;
+`;
+
+export const Social = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 105px;
+    padding-bottom: 80px;
+
+    > div {
+        border-radius: 50%;
+        padding: 8px;
+        background: ${(props) => props.theme.colors.secondary};
+    }
 `;
