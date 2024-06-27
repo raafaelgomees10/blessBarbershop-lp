@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import homeBg from '../../../public/images/home-bg.png';
+import homeBg from '../../../public/images/bg2.png';
 
 export const Section = styled.section`
     background: url(${homeBg.src}) 50% / cover no-repeat;
@@ -49,8 +49,7 @@ export const Button = styled.button`
     color: ${(props) => props.theme.colors.primary};
 
     font-size: 1.4rem;
-    font-weight: 700;
-    line-height: 200%; /* 24px */
+    font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
     margin: 48px 0 80px;

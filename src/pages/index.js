@@ -1,9 +1,7 @@
 import Head from 'next/head';
 import { Inter } from 'next/font/google';
 import HomeBless from '@/components/home';
-import Header from '@/components/header';
-
-const inter = Inter({ subsets: ['latin'] });
+import About from '@/components/about';
 
 export default function Home() {
     return (
@@ -14,8 +12,9 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={`teste`}>
+            <main>
                 <HomeBless />
+                <About />
             </main>
         </>
     );

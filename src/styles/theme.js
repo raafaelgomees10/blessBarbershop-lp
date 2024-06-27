@@ -4,6 +4,7 @@ export const theme = {
         primaryDark: '#19a866',
         secondary: '#977656',
         buttons: '#977656',
+        text: '#565656',
     },
     font: {
         family: 'Karantina',
