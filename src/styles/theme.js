@@ -10,5 +10,6 @@ export const theme = {
         family: 'Karantina',
         family2: 'Rye',
         family3: 'Jost',
+        family4: 'Galada',
     },
 };

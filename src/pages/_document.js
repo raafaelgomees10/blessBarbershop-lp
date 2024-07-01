@@ -1,22 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
-// export default function Document() {
-//     return (
-//         <Html lang="en">
-//             <Head />
-//             <link rel="preconnect" href="https://fonts.googleapis.com" />
-//             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-//             <link
-//                 href="https://fonts.googleapis.com/css2?family=Galada&family=Jost:ital,wght@0,300..700;1,300..700&family=Karantina:wght@300;400;700&family=Rye&display=swap"
-//                 rel="stylesheet"
-//             />
-//             <body>
-//                 <Main />
-//                 <NextScript />
-//             </body>
-//         </Html>
-//     );
-// }
 import Document from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 

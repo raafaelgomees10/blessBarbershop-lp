@@ -8,6 +8,7 @@ export const GlobalStyles = createGlobalStyle`
         list-style: none;
         margin: 0;
         padding: 0;
+        color: #fff;
     }
 
     html, body{
