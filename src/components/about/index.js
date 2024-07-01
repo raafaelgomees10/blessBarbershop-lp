@@ -13,11 +13,13 @@ const About = () => {
                     alt="haircuting photos"
                 />
                 <S.Content>
-                    <S.Title className="title">
+                    <S.Title className="sectionTitle">
                         About Us
                         <span>About</span>
                     </S.Title>
-                    <S.SubTitle>Best Haircut Salon</S.SubTitle>
+                    <S.SubTitle className="sectionSubTitle">
+                        Best Haircut Salon
+                    </S.SubTitle>
                     <S.Text>
                         Let your hairdressers do their amazing job. Trim the hair to get
                         your desired look. Book appointment with us for your favorite hair

@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { Inter } from 'next/font/google';
 import HomeBless from '@/components/home';
 import About from '@/components/about';
+import BookNow from '@/components/bookNow';
 
 export default function Home() {
     return (
@@ -15,6 +16,7 @@ export default function Home() {
             <main>
                 <HomeBless />
                 <About />
+                <BookNow />
             </main>
         </>
     );

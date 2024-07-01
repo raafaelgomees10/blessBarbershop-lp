@@ -23,31 +23,13 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h2`
-    color: ${(props) => props.theme.colors.secondary};
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: #000;
-    font-family: ${(props) => props.theme.font.family2};
-    font-size: 1.8rem;
-    font-weight: 400;
-    position: relative;
-    z-index: 20;
-
     > span {
-        color: #161616;
-        font-family: ${(props) => props.theme.font.family2};
-        font-size: 6.4rem;
-        position: absolute;
-        top: -45px;
-        left: -157px;
-        z-index: -1;
+        top: -43px;
+        left: -155px;
     }
 `;
 
 export const SubTitle = styled.h1`
-    color: ${(props) => props.theme.colors.primary};
-    font-family: ${(props) => props.theme.font.family};
-    font-size: 4.8rem;
-    font-weight: 700;
     margin: 28px 0 44px;
 `;
 
