@@ -5,6 +5,7 @@ import About from '@/components/about';
 import BookNow from '@/components/bookNow';
 import Services from '@/components/servicesSec';
 import Image from 'next/image';
+import Team from '@/components/team';
 
 export default function Home() {
     return (
@@ -26,6 +27,7 @@ export default function Home() {
                     src="/images/grooming.png"
                     alt="haircuting photos"
                 />
+                <Team />
             </main>
         </>
     );

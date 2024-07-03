@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import * as S from './styles';
-import Icon from '../icons';
+
 const Services = () => {
     const [serviceSelected, setServiceSelected] = useState('haircuts');
     useEffect(() => {}, [serviceSelected]);
@@ -31,8 +31,8 @@ const Services = () => {
     };
 
     return (
-        <S.Section>
-            <S.Title className="sectionTitle">
+        <S.Section id="services">
+            <S.Title>
                 Services
                 <span>Services</span>
             </S.Title>
@@ -61,13 +61,11 @@ const Services = () => {
             <S.Content>
                 <S.CutsList>
                     {services[serviceSelected].map((item) => (
-                        <>
-                            <li>
-                                <S.Cut>{item.name}</S.Cut>
-                                <S.Line />
-                                <S.Price>${item.price}</S.Price>
-                            </li>
-                        </>
+                        <li key={item.name}>
+                            <S.Cut>{item.name}</S.Cut>
+                            <S.Line />
+                            <S.Price>${item.price}</S.Price>
+                        </li>
                     ))}
                 </S.CutsList>
                 <S.Button>Book Now</S.Button>

@@ -3,13 +3,33 @@ import servicesBg from '../../../public/images/servicesBg.png';
 
 export const Section = styled.section`
     background: url(${servicesBg.src}) 50% / cover no-repeat;
-    padding: 77px 60px 0;
     display: flex;
     flex-direction: column;
     height: 711px;
+    padding: 77px 60px 0;
 `;
 
-export const Title = styled.h1``;
+export const Title = styled.h1`
+    color: #161616;
+    font-family: ${(props) => props.theme.font.family2};
+    font-size: 6.4rem;
+    font-weight: 400;
+    position: relative;
+    z-index: 10;
+
+    > span {
+        position: absolute;
+        color: ${(props) => props.theme.colors.secondary};
+        font-family: ${(props) => props.theme.font.family2};
+        font-size: 3.2rem;
+        font-weight: 400;
+        z-index: 0;
+        bottom: 0px;
+        left: 180px;
+        -webkit-text-stroke-width: 0.8px;
+        -webkit-text-stroke-color: #000;
+    }
+`;
 
 export const ServicesList = styled.ul`
     max-width: 1245px;

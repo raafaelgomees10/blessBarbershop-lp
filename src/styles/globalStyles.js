@@ -18,9 +18,8 @@ export const GlobalStyles = createGlobalStyle`
     .sectionTitle{
         color: ${(props) => props.theme.colors.secondary};
         font-family: ${(props) => props.theme.font.family2};
-        font-size: 2rem;
+        font-size: 3.2rem;
         font-weight: 400;
-        position: relative;
         z-index: 20;
 
         -webkit-text-stroke-width: 0.1px;
@@ -30,7 +29,6 @@ export const GlobalStyles = createGlobalStyle`
             color: #161616;
             font-family: ${(props) => props.theme.font.family2};
             font-size: 6.4rem;
-            position: absolute;
             z-index: -1;
         }
     }
