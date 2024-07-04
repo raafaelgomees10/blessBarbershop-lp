@@ -6,6 +6,24 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 const Team = () => {
+    const members = [
+        {
+            name: 'Lukaku Santos',
+            image: 'member1',
+        },
+        {
+            name: 'Carla Couto',
+            image: 'member2',
+        },
+        {
+            name: 'Lukaku Santos',
+            image: 'member3',
+        },
+        {
+            name: 'Rafael Gomes',
+            image: 'member4',
+        },
+    ];
     return (
         <S.Section id="team">
             <S.Title>
@@ -40,68 +58,27 @@ const Team = () => {
                     }}
                     extensions={{ AutoScroll }}
                 >
-                    <SplideSlide>
-                        <S.Member>
-                            <S.ImageContainer className="member1">
-                                <Image
-                                    width={320}
-                                    height={440}
-                                    src="/images/lukaku.webp"
-                                    alt="haircuting photos"
-                                />
-                            </S.ImageContainer>
-                            <S.Name>
-                                <span>Lukaku Santos</span>
-                            </S.Name>
-                        </S.Member>
-                    </SplideSlide>
-                    <SplideSlide>
-                        <S.Member>
-                            <S.ImageContainer className="member2">
-                                <Image
-                                    width={310}
-                                    height={440}
-                                    src="/images/carla.webp"
-                                    alt="haircuting photos"
-                                />
-                            </S.ImageContainer>
-                            <S.Name>
-                                <span>Carla Couto</span>
-                            </S.Name>
-                        </S.Member>
-                    </SplideSlide>
-
-                    <SplideSlide>
-                        <S.Member>
-                            <S.ImageContainer className="member3">
-                                <Image
-                                    width={300}
-                                    height={440}
-                                    src="/images/wick.webp"
-                                    alt="haircuting photos"
-                                />
-                            </S.ImageContainer>
-                            <S.Name className="teamCaption">
-                                <span>Jhon Wick</span>
-                            </S.Name>
-                        </S.Member>
-                    </SplideSlide>
-
-                    <SplideSlide>
-                        <S.Member>
-                            <S.ImageContainer className="member3">
-                                <Image
-                                    width={300}
-                                    height={440}
-                                    src="/images/jon.webp"
-                                    alt="haircuting photos"
-                                />
-                            </S.ImageContainer>
-                            <S.Name className="teamCaption">
-                                <span>Jhon Wick</span>
-                            </S.Name>
-                        </S.Member>
-                    </SplideSlide>
+                    {members.map((member, index) => (
+                        <>
+                            <SplideSlide key={index}>
+                                <S.Member key={index}>
+                                    <S.ImageContainer
+                                        className={`${member.image} image-container`}
+                                    >
+                                        <Image
+                                            width={310}
+                                            height={440}
+                                            src={`/images/${member.image}.webp`}
+                                            alt={`Member ${member.name}`}
+                                        />
+                                    </S.ImageContainer>
+                                    <S.Name className="name">
+                                        <span>{member.name}</span>
+                                    </S.Name>
+                                </S.Member>
+                            </SplideSlide>
+                        </>
+                    ))}
                 </Splide>
             </S.Content>
         </S.Section>

@@ -6,6 +6,29 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/sea-green';
 
 const Testimonials = () => {
+    const testmonials = [
+        {
+            name: 'Luke Belling',
+            image: 'client1',
+            text: "I've always struggled to find a barber who understands my style. Since discovering Bless Barbershop, I haven't gone anywhere else! Impeccable service and a super welcoming atmosphere",
+        },
+        {
+            name: 'Davies Martin',
+            image: 'client2',
+            text: "I love the relaxed atmosphere and the barbers' skills. I always leave satisfied with a perfect cut. Best barbershop in town, without a doubt!",
+        },
+        {
+            name: 'Nicky Shaw',
+            image: 'client3',
+            text: 'The team is extremely professional and attentive. Every visit is a unique and pleasant experience. I highly recommend it to anyone looking for the perfect haircut',
+        },
+        {
+            name: 'Bryan James',
+            image: 'client4',
+            text: "Absolutely top-notch service! The barbers here are wizards with scissors. I've been coming here for years, and they never disappoint. Highly recommend!",
+        },
+    ];
+
     return (
         <S.Section id="Testimonials">
             <S.Title>
@@ -45,98 +68,26 @@ const Testimonials = () => {
                         },
                     }}
                 >
-                    <SplideSlide>
-                        <S.Card>
-                            <Image
-                                width={80}
-                                height={80}
-                                src="/images/client1.jpg"
-                                alt="haircuting photos"
-                            />
-                            <S.ClientInfo>
-                                <Icon icon="quote" width="30px" height="21" />
-                                <S.ClientText>
-                                    Let your hairdressers do their amazing job. Trim the
-                                    hair to get your desired look. Book appointment with
-                                    us for your favorite hair Styles do their amazing job.
-                                    Trim the hair to get your desired look. Book
-                                    appointment with us for your
-                                </S.ClientText>
-                                <Icon icon="quote" width="30px" height="21" />
-
-                                <S.ClientName>Rick Wright</S.ClientName>
-                            </S.ClientInfo>
-                        </S.Card>
-                    </SplideSlide>
-                    <SplideSlide>
-                        <S.Card>
-                            <Image
-                                width={80}
-                                height={80}
-                                src="/images/client2.jpg"
-                                alt="haircuting photos"
-                            />
-                            <S.ClientInfo>
-                                <Icon icon="quote" width="30px" height="21" />
-                                <S.ClientText>
-                                    Let your hairdressers do their amazing job. Trim the
-                                    hair to get your desired look. Book appointment with
-                                    us for your favorite hair Styles do their amazing job.
-                                    Trim the hair to get your desired look. Book
-                                    appointment with us for your
-                                </S.ClientText>
-                                <Icon icon="quote" width="30px" height="21" />
-
-                                <S.ClientName>Rick Wright</S.ClientName>
-                            </S.ClientInfo>
-                        </S.Card>
-                    </SplideSlide>
-                    <SplideSlide>
-                        <S.Card>
-                            <Image
-                                width={80}
-                                height={80}
-                                src="/images/client3.jpg"
-                                alt="haircuting photos"
-                            />
-                            <S.ClientInfo>
-                                <Icon icon="quote" width="30px" height="21" />
-                                <S.ClientText>
-                                    Let your hairdressers do their amazing job. Trim the
-                                    hair to get your desired look. Book appointment with
-                                    us for your favorite hair Styles do their amazing job.
-                                    Trim the hair to get your desired look. Book
-                                    appointment with us for your
-                                </S.ClientText>
-                                <Icon icon="quote" width="30px" height="21" />
-
-                                <S.ClientName>Rick Wright</S.ClientName>
-                            </S.ClientInfo>
-                        </S.Card>
-                    </SplideSlide>
-                    <SplideSlide>
-                        <S.Card>
-                            <Image
-                                width={80}
-                                height={80}
-                                src="/images/client4.jpg"
-                                alt="haircuting photos"
-                            />
-                            <S.ClientInfo>
-                                <Icon icon="quote" width="30px" height="21" />
-                                <S.ClientText>
-                                    Let your hairdressers do their amazing job. Trim the
-                                    hair to get your desired look. Book appointment with
-                                    us for your favorite hair Styles do their amazing job.
-                                    Trim the hair to get your desired look. Book
-                                    appointment with us for your
-                                </S.ClientText>
-                                <Icon icon="quote" width="30px" height="21" />
-
-                                <S.ClientName>Rick Wright</S.ClientName>
-                            </S.ClientInfo>
-                        </S.Card>
-                    </SplideSlide>
+                    {testmonials.map((client, index) => (
+                        <>
+                            <SplideSlide key={client}>
+                                <S.Card key={index}>
+                                    <Image
+                                        width={80}
+                                        height={80}
+                                        src={`/images/${client.image}.jpg`}
+                                        alt="haircuting photos"
+                                    />
+                                    <S.ClientInfo>
+                                        <Icon icon="quote" width="30px" height="21" />
+                                        <S.ClientText>{client.text}</S.ClientText>
+                                        <Icon icon="quote" width="30px" height="21" />
+                                        <S.ClientName>{client.name}</S.ClientName>
+                                    </S.ClientInfo>
+                                </S.Card>
+                            </SplideSlide>
+                        </>
+                    ))}
                 </Splide>
             </S.Content>
         </S.Section>

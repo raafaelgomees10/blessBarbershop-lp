@@ -22,8 +22,8 @@ const Quote = ({ width, height, color }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(8.37297 3.6) rotate(60.1956) scale(20.0524 24.4792)"
                 >
-                    <stop stop-color="#FFA800" />
-                    <stop offset="1" stop-color="#977656" />
+                    <stop stopColor="#FFA800" />
+                    <stop offset="1" stopColor="#977656" />
                 </radialGradient>
             </defs>
         </svg>

@@ -99,49 +99,41 @@ export const Member = styled.div`
     position: relative;
     z-index: 20;
     text-align: center;
-`;
 
-export const ImageContainer = styled.div`
-    position: absolute;
-
-    &.member1 {
-        bottom: 5px;
-        left: -10px;
-    }
-    &.member2 {
-        bottom: 5px;
-        left: 0;
-    }
-    &.member3 {
-        bottom: 5px;
-        left: -10px;
-    }
-
-    &.teamCaption {
-        &:hover {
-            border: 12px solid red;
-        }
-    }
-    > img {
+    .image-container img {
         transition: 0.4s all ease-in-out;
+
         &:hover {
             transform: scale(1.05);
         }
     }
+
+    &:hover .name {
+        background: url(${teamBg2.src}) 50% / contain no-repeat !important;
+
+        > span {
+            color: #000;
+        }
+    }
+`;
+
+export const ImageContainer = styled.div`
+    bottom: 5px;
+    left: -10px;
+    position: absolute;
 `;
 
 export const Name = styled.div`
+    background: url(${teamBg.src}) 50% / contain no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(${teamBg.src}) 50% / contain no-repeat;
     width: 350px;
     height: 155px;
     position: absolute;
     bottom: -30px;
     left: -30px;
     transition: 0.4s;
-    cursor: pointer;
 
     > span {
         transition: 0.3s;
@@ -149,13 +141,5 @@ export const Name = styled.div`
         color: #cecece;
         font-size: 3.6rem;
         margin-top: 12px;
-    }
-
-    &:hover {
-        background: url(${teamBg2.src}) 50% / contain no-repeat !important;
-
-        > span {
-            color: #000;
-        }
     }
 `;
