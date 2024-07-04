@@ -18,7 +18,7 @@ const Team = () => {
                         rewind: false,
                         perPage: 3,
                         perMove: 1,
-                        focus: 0,
+                        focus: 'center',
                         omitEnd: true,
                         type: 'loop',
                         gap: '1rem',

@@ -6,6 +6,7 @@ import BookNow from '@/components/bookNow';
 import Services from '@/components/servicesSec';
 import Image from 'next/image';
 import Team from '@/components/team';
+import Testimonials from '@/components/testimonials';
 
 export default function Home() {
     return (
@@ -28,6 +29,7 @@ export default function Home() {
                     alt="haircuting photos"
                 />
                 <Team />
+                <Testimonials />
             </main>
         </>
     );
