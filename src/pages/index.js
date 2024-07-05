@@ -8,6 +8,7 @@ import Image from 'next/image';
 import Team from '@/components/team';
 import Testimonials from '@/components/testimonials';
 import Footer from '@/components/footer';
+import Grooming from '@/components/grooming';
 
 export default function Home() {
     return (
@@ -23,12 +24,7 @@ export default function Home() {
                 <About />
                 <BookNow />
                 <Services />
-                <Image
-                    width={1340}
-                    height={360}
-                    src="/images/grooming.png"
-                    alt="haircuting photos"
-                />
+                <Grooming />
                 <Team />
                 <Testimonials />
                 <Footer />
