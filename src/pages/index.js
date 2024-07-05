@@ -7,6 +7,7 @@ import Services from '@/components/servicesSec';
 import Image from 'next/image';
 import Team from '@/components/team';
 import Testimonials from '@/components/testimonials';
+import Footer from '@/components/footer';
 
 export default function Home() {
     return (
@@ -30,6 +31,7 @@ export default function Home() {
                 />
                 <Team />
                 <Testimonials />
+                <Footer />
             </main>
         </>
     );
