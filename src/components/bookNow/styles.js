@@ -7,7 +7,7 @@ export const Section = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 94px 0 40px;
+    padding: 94px 0;
 `;
 
 export const Title = styled.h1`

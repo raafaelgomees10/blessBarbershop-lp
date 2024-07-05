@@ -3,7 +3,6 @@ import * as S from './styles';
 
 const Services = () => {
     const [serviceSelected, setServiceSelected] = useState('haircuts');
-    useEffect(() => {}, [serviceSelected]);
 
     const services = {
         haircuts: [
@@ -32,44 +31,46 @@ const Services = () => {
 
     return (
         <S.Section id="services">
-            <S.Title>
-                Services
-                <span>Services</span>
-            </S.Title>
-            <nav>
-                <S.ServicesList>
-                    <li
-                        className={serviceSelected === 'haircuts' ? 'active' : ''}
-                        onClick={() => setServiceSelected('haircuts')}
-                    >
-                        HAIRCUTS
-                    </li>
-                    <li
-                        className={serviceSelected === 'beards' ? 'active' : ''}
-                        onClick={() => setServiceSelected('beards')}
-                    >
-                        BEARDS & SHAVES
-                    </li>
-                    <li
-                        className={serviceSelected === 'extra' ? 'active' : ''}
-                        onClick={() => setServiceSelected('extra')}
-                    >
-                        EXTRA
-                    </li>
-                </S.ServicesList>
-            </nav>
-            <S.Content>
-                <S.CutsList>
-                    {services[serviceSelected].map((item) => (
-                        <li key={item.name}>
-                            <S.Cut>{item.name}</S.Cut>
-                            <S.Line />
-                            <S.Price>${item.price}</S.Price>
+            <S.Container>
+                <S.Title>
+                    Services
+                    <span>Services</span>
+                </S.Title>
+                <nav>
+                    <S.ServicesList>
+                        <li
+                            className={serviceSelected === 'haircuts' ? 'active' : ''}
+                            onClick={() => setServiceSelected('haircuts')}
+                        >
+                            HAIRCUTS
                         </li>
-                    ))}
-                </S.CutsList>
-                <S.Button>Book Now</S.Button>
-            </S.Content>
+                        <li
+                            className={serviceSelected === 'beards' ? 'active' : ''}
+                            onClick={() => setServiceSelected('beards')}
+                        >
+                            BEARDS & SHAVES
+                        </li>
+                        <li
+                            className={serviceSelected === 'extra' ? 'active' : ''}
+                            onClick={() => setServiceSelected('extra')}
+                        >
+                            EXTRA
+                        </li>
+                    </S.ServicesList>
+                </nav>
+                <S.Content>
+                    <S.CutsList>
+                        {services[serviceSelected].map((item) => (
+                            <li key={item.name}>
+                                <S.Cut>{item.name}</S.Cut>
+                                <S.Line />
+                                <S.Price>${item.price}</S.Price>
+                            </li>
+                        ))}
+                    </S.CutsList>
+                    <S.Button>Book Now</S.Button>
+                </S.Content>
+            </S.Container>
         </S.Section>
     );
 };

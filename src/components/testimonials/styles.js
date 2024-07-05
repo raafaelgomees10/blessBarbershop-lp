@@ -7,7 +7,7 @@ export const Section = styled.section`
     display: flex;
     flex-direction: column;
     min-height: 780px;
-    padding: 77px 0 0;
+    padding: 72px 0;
 `;
 
 export const Title = styled.h1`

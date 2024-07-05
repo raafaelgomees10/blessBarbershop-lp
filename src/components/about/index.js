@@ -10,7 +10,7 @@ const About = () => {
                     width={375}
                     height={453}
                     src="/images/fotos.png"
-                    alt="haircuting photos"
+                    alt="hair cutting photos"
                 />
                 <S.Content>
                     <S.Title className="sectionTitle">
@@ -32,7 +32,7 @@ const About = () => {
                 width={780}
                 height={367}
                 src="/images/about-shape.webp"
-                alt="haircuting photos"
+                alt="hair cutting tools"
             />
         </S.Section>
     );

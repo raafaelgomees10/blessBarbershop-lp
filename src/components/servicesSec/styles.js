@@ -3,10 +3,15 @@ import servicesBg from '../../../public/images/servicesBg.png';
 
 export const Section = styled.section`
     background: url(${servicesBg.src}) 50% / cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    height: 711px;
+    min-height: 711px;
     padding: 77px 60px 0;
+`;
+
+export const Container = styled.div`
+    @media (min-width: 1920px) {
+        margin: 0 auto;
+        max-width: 1700px;
+    }
 `;
 
 export const Title = styled.h1`

@@ -29,7 +29,7 @@ const Header = () => {
                             spy={true}
                             smooth={true}
                             // offset={-85}
-                            duration={500}
+                            duration={800}
                         >
                             <S.Span>About</S.Span>
                         </Link>
@@ -42,7 +42,7 @@ const Header = () => {
                             spy={true}
                             smooth={true}
                             // offset={-85}
-                            duration={500}
+                            duration={800}
                         >
                             <S.Span>Services</S.Span>
                         </Link>
@@ -59,7 +59,7 @@ const Header = () => {
                             spy={true}
                             smooth={true}
                             // offset={-85}
-                            duration={500}
+                            duration={800}
                         >
                             <S.Span>Our Team</S.Span>
                         </Link>
@@ -72,7 +72,7 @@ const Header = () => {
                             spy={true}
                             smooth={true}
                             // offset={-85}
-                            duration={500}
+                            duration={800}
                         >
                             <S.Span>Testimonials</S.Span>
                         </Link>
@@ -85,7 +85,7 @@ const Header = () => {
                             spy={true}
                             smooth={true}
                             // offset={-85}
-                            duration={500}
+                            duration={800}
                         >
                             <S.Span>Contact</S.Span>
                         </Link>

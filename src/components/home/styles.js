@@ -1,14 +1,25 @@
 import styled from 'styled-components';
-import homeBg from '../../../public/images/bg2.png';
+import bgHome from '../../../public/images/bgHome.png';
+import bgHome2x from '../../../public/images/bgHome2x.png';
 
 export const Section = styled.section`
-    background: url(${homeBg.src}) 50% / cover no-repeat;
+    background: url(${bgHome.src}) 50% / cover no-repeat;
+    @media (min-width: 1920px) {
+        background: url(${bgHome2x.src}) 50% / cover no-repeat;
+    }
+`;
+export const Container = styled.div`
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
 `;
 
 export const Content = styled.div`
-    padding: 0 0 0 64px;
     width: 100%;
     max-width: 840px;
+    @media (min-width: 1920px) {
+        margin-top: 48px;
+    }
 `;
 
 export const Title = styled.h1`

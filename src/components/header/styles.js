@@ -17,6 +17,16 @@ export const List = styled.ul`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    > li {
+        > a {
+            &.active {
+                > span {
+                    color: ${(props) => props.theme.colors.secondary};
+                }
+            }
+        }
+    }
 `;
 
 export const Span = styled.span`

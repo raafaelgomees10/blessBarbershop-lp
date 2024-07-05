@@ -8,7 +8,7 @@ import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 const Team = () => {
     const members = [
         {
-            name: 'Lukaku Santos',
+            name: 'Luke Santos',
             image: 'member1',
         },
         {
@@ -16,11 +16,11 @@ const Team = () => {
             image: 'member2',
         },
         {
-            name: 'Lukaku Santos',
+            name: 'Roy Gomes',
             image: 'member3',
         },
         {
-            name: 'Rafael Gomes',
+            name: 'Jhon Molloy',
             image: 'member4',
         },
     ];

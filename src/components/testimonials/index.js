@@ -62,12 +62,13 @@ const Testimonials = () => {
                             },
 
                             1199: {
-                                perPage: 3,
                                 gap: '3rem',
+                            },
+                            1366: {
+                                gap: '40rem',
                             },
 
                             1920: {
-                                perPage: 3,
                                 gap: '4rem',
                             },
                         },

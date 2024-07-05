@@ -15,6 +15,12 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 65px 86px 40px 208px;
+
+    @media (min-width: 1920px) {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 64px 0;
+    }
 `;
 
 export const Content = styled.div`
