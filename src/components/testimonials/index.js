@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import Icon from '../icons';
 import * as S from './styles';
 import Image from 'next/image';
-import Icon from '../icons';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/sea-green';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 
 const Testimonials = () => {
     const testmonials = [
@@ -75,24 +75,22 @@ const Testimonials = () => {
                     }}
                 >
                     {testmonials.map((client, index) => (
-                        <>
-                            <SplideSlide key={client}>
-                                <S.Card key={index}>
-                                    <Image
-                                        width={80}
-                                        height={80}
-                                        src={`/images/${client.image}.jpg`}
-                                        alt="haircuting photos"
-                                    />
-                                    <S.ClientInfo>
-                                        <Icon icon="quote" width="30px" height="21" />
-                                        <S.ClientText>{client.text}</S.ClientText>
-                                        <Icon icon="quote" width="30px" height="21" />
-                                        <S.ClientName>{client.name}</S.ClientName>
-                                    </S.ClientInfo>
-                                </S.Card>
-                            </SplideSlide>
-                        </>
+                        <SplideSlide key={client.name}>
+                            <S.Card>
+                                <Image
+                                    width={80}
+                                    height={80}
+                                    src={`/images/${client.image}.jpg`}
+                                    alt="haircuting photos"
+                                />
+                                <S.ClientInfo>
+                                    <Icon icon="quote" width="30px" height="21" />
+                                    <S.ClientText>{client.text}</S.ClientText>
+                                    <Icon icon="quote" width="30px" height="21" />
+                                    <S.ClientName>{client.name}</S.ClientName>
+                                </S.ClientInfo>
+                            </S.Card>
+                        </SplideSlide>
                     ))}
                 </Splide>
             </S.Content>

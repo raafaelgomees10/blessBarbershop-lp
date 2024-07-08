@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import * as S from './styles';
 
 const Services = () => {
@@ -8,12 +8,12 @@ const Services = () => {
         haircuts: [
             { name: 'Regular Hair Cut', price: 32 },
             { name: 'Kids Hair Cut', price: 25 },
-            { name: 'Hair Cut & Beard Trim', price: 48 },
+            { name: 'Hair Cut & Beard Trim', price: 45 },
             { name: 'Hair Cut & Wash', price: 38 },
-            { name: 'Fade & Beard Trim', price: 48 },
+            { name: 'Fade & Beard Trim', price: 45 },
             { name: 'Scissor Hair Cut', price: 32 },
-            { name: 'Long Hair - Hair Cut', price: 45 },
-            { name: 'Hair Cut & Shave', price: 62 },
+            { name: 'Long Hair - Hair Cut', price: 40 },
+            { name: 'Hair Cut & Shave', price: 50 },
             { name: 'Fade', price: 32 },
         ],
         beards: [
@@ -25,7 +25,7 @@ const Services = () => {
             { name: 'Face Massage', price: 20 },
             { name: "Men's Hair Color", price: 35 },
             { name: 'Line Up', price: 13 },
-            { name: "Men's Hair Cut & Color", price: 64 },
+            { name: "Men's Hair Cut & Color", price: 55 },
         ],
     };
 
@@ -64,7 +64,7 @@ const Services = () => {
                             <li key={item.name}>
                                 <S.Cut>{item.name}</S.Cut>
                                 <S.Line />
-                                <S.Price>${item.price}</S.Price>
+                                <S.Price>€{item.price}</S.Price>
                             </li>
                         ))}
                     </S.CutsList>

@@ -109,7 +109,7 @@ export const Member = styled.div`
     }
 
     &:hover .name {
-        background: url(${teamBg2.src}) 50% / contain no-repeat !important;
+        background: url(${teamBg2.src}) 50% / contain no-repeat;
 
         > span {
             color: #000;

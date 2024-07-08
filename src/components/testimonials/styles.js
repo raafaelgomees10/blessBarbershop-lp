@@ -1,13 +1,45 @@
 import styled from 'styled-components';
-import testimonialsBg from '../../../public/images/testimonialsBg.png';
+import testimonialsBg from '../../../public/images/bgTestimonials.png';
+import mask from '../../../public/images/mask.png';
+import mask2 from '../../../public/images/mask2.png';
 
 export const Section = styled.section`
-    background: url(${testimonialsBg.src}) center/cover no-repeat, rgba(9, 9, 9, 0.2);
+    background: url(${testimonialsBg.src}) center/cover no-repeat, rgba(9, 9, 9, 0.6);
     background-blend-mode: darken;
+    background-attachment: fixed;
+    min-height: 780px;
+
     display: flex;
     flex-direction: column;
-    min-height: 780px;
+
     padding: 72px 0;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: 100% auto;
+        z-index: 5;
+
+        bottom: 0;
+        background: url(${mask.src}) 0 100% no-repeat;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: 100% auto;
+        z-index: 5;
+        transform: rotate(180deg);
+        top: 0;
+        background: url(${mask2.src}) 0 100% no-repeat;
+    }
 `;
 
 export const Title = styled.h1`

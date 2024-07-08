@@ -1,16 +1,20 @@
 import styled from 'styled-components';
-import servicesBg from '../../../public/images/servicesBg.png';
+import servicesBg from '../../../public/images/bgService.png';
 
 export const Section = styled.section`
     background: url(${servicesBg.src}) 50% / cover no-repeat;
-    min-height: 711px;
-    padding: 77px 60px 0;
+    padding: 77px 60px;
 `;
 
 export const Container = styled.div`
     @media (min-width: 1920px) {
         margin: 0 auto;
-        max-width: 1700px;
+        max-width: 1400px;
+
+        > nav {
+            display: flex;
+            justify-content: center;
+        }
     }
 `;
 
@@ -42,6 +46,10 @@ export const ServicesList = styled.ul`
     display: flex;
     justify-content: space-between;
     margin: 70px 0 0;
+
+    @media (min-width: 1920px) {
+        max-width: 1400px;
+    }
 
     > li {
         font-family: ${(props) => props.theme.font.family};
@@ -89,6 +97,10 @@ export const CutsList = styled.ul`
         display: flex;
         max-width: 570px;
         justify-content: space-between;
+
+        @media (min-width: 1920px) {
+            justify-self: center;
+        }
     }
 `;
 

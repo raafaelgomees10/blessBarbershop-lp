@@ -1,10 +1,11 @@
 import styled from 'styled-components';
-import FooterBg from '../../../public/images/footer.png';
+// import FooterBg from '../../../public/images/bgFooter.png';
 
 export const Footer = styled.footer`
-    background: url(${FooterBg.src}) 50% / cover no-repeat;
     width: 100%;
     padding: 120px 0 32px;
+    /* background: url(${FooterBg.src}) 50% / contain no-repeat; */
+    background-color: #0d0d0d;
 `;
 
 export const Container = styled.div`
@@ -35,7 +36,7 @@ export const BlockContent = styled.div`
 
 export const BlockTitle = styled.h4`
     margin-bottom: 16px;
-    color: #fbb034;
+    color: ${(props) => props.theme.colors.secondaryLight};
     font-size: 2rem;
 `;
 export const OpenDays = styled.div`
@@ -64,16 +65,15 @@ export const BlockItem = styled.div`
 
 export const Newsletter = styled.div`
     font-size: 1.8rem;
-    margin: 16px 0 64px;
-    color: #fbb034;
+    margin: 32px 0 64px;
+    color: ${(props) => props.theme.colors.secondaryLight};
     font-size: 2rem;
     font-weight: 700;
 `;
 
 export const FormGroup = styled.div`
     position: relative;
-    /* padding: 16px 0 0; */
-    margin-top: 16px;
+    margin-top: 8px;
     display: flex;
     align-items: flex-end;
 `;
@@ -103,7 +103,7 @@ export const Input = styled.input`
     &:focus ~ label {
         top: 8px;
         font-size: 1.8rem;
-        color: #c8a47e;
+        color: ${(props) => props.theme.colors.secondaryLight};
         font-weight: 700;
     }
 
@@ -121,14 +121,14 @@ export const Label = styled.label`
     display: block;
     transition: 0.2s;
     font-size: 1.8rem;
-    color: #c8a47e;
+    color: ${(props) => props.theme.colors.secondaryLight};
 `;
 
 export const Button = styled.button`
     width: 48px;
     height: 48px;
     flex-shrink: 0;
-    background-color: #c8a47e;
+    background-color: ${(props) => props.theme.colors.secondaryLight};
     border: none;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
@@ -140,7 +140,7 @@ export const Button = styled.button`
 `;
 
 export const Copy = styled.div`
-    border-top: 1px solid #c8a47e;
+    border-top: 1px solid ${(props) => props.theme.colors.secondaryLight};
     display: flex;
     justify-content: space-between;
     padding: 32px 72px 0;
