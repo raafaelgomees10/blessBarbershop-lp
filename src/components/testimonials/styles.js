@@ -44,7 +44,9 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-    margin-left: 60px;
+    margin: 0 auto;
+    padding: 0 48px;
+    max-width: 1300px;
     > span {
         bottom: 0px;
         left: 250px;

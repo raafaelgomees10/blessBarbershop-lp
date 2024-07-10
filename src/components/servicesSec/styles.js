@@ -108,6 +108,7 @@ export const LineContainer = styled.div`
 
 export const Price = styled.div`
     font-size: 2.6rem;
+    font-family: ${(props) => props.theme.font.family4};
 `;
 
 export const Line = styled.div`

@@ -2,7 +2,6 @@ import React from 'react';
 import * as S from './styles';
 import Image from 'next/image';
 import Button1 from '../buttons/button1';
-import Button2 from '../buttons/button2';
 
 const About = () => {
     return (

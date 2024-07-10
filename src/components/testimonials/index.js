@@ -85,9 +85,9 @@ const Testimonials = () => {
                                         alt="haircuting photos"
                                     />
                                     <S.ClientInfo>
-                                        <Icon icon="quote" width="30px" height="21" />
+                                        <Icon icon="quote" />
                                         <S.ClientText>{client.text}</S.ClientText>
-                                        <Icon icon="quote" width="30px" height="21" />
+                                        <Icon icon="quote" />
                                         <S.ClientName>{client.name}</S.ClientName>
                                     </S.ClientInfo>
                                 </S.Card>

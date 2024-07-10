@@ -24,7 +24,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-    width: 463px;
+    width: 500px;
     justify-self: flex-end;
     position: relative;
 `;
