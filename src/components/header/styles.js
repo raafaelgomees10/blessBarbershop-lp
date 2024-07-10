@@ -5,9 +5,18 @@ export const Container = styled.header`
     width: 100%;
     justify-content: center;
     align-items: center;
-    width: 100%;
     padding: 24px 0;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    transition: padding 0.3s;
+
+    &.scrolled {
+        padding: 0;
+        background: rgba(0, 0, 0, 0.35);
+    }
 `;
+
 export const Nav = styled.nav`
     max-width: 900px;
     width: 100%;
@@ -42,4 +51,16 @@ export const Span = styled.span`
     &.active {
         color: ${(props) => props.theme.colors.secondary};
     }
+`;
+
+export const LogoContainer = styled.div`
+    transition: transform 0.3s;
+
+    ${Container}.scrolled & {
+        transform: scale(0.8);
+    }
+`;
+
+export const Spacer = styled.div`
+    height: ${(props) => props.height}px;
 `;

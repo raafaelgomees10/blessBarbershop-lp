@@ -26,12 +26,12 @@ const Team = () => {
     ];
     return (
         <S.Section id="team">
-            {/* <S.Container> */}
-            <S.Title>
+            <S.Title className="sectionTitle">
                 TEAM
                 <span>Team</span>
             </S.Title>
-            <S.Content>
+
+            <S.Content className="customSlide">
                 <Splide
                     options={{
                         rewind: false,
@@ -80,7 +80,6 @@ const Team = () => {
                     ))}
                 </Splide>
             </S.Content>
-            {/* </S.Container> */}
         </S.Section>
     );
 };

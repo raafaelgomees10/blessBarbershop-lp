@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import * as S from './styles';
-
+import Button1 from '../buttons/button1';
+import Button2 from '../buttons/button2';
 const Services = () => {
     const [serviceSelected, setServiceSelected] = useState('haircuts');
 
@@ -32,7 +33,7 @@ const Services = () => {
     return (
         <S.Section id="services">
             <S.Container>
-                <S.Title>
+                <S.Title className="sectionTitle">
                     Services
                     <span>Services</span>
                 </S.Title>
@@ -68,7 +69,7 @@ const Services = () => {
                             </li>
                         ))}
                     </S.CutsList>
-                    <S.Button>Book Now</S.Button>
+                    <Button2 margin="32px auto 0">Book Appointment </Button2>
                 </S.Content>
             </S.Container>
         </S.Section>

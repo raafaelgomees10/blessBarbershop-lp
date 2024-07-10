@@ -1,6 +1,8 @@
 import React from 'react';
 import * as S from './styles';
 import Image from 'next/image';
+import Button1 from '../buttons/button1';
+import Button2 from '../buttons/button2';
 
 const About = () => {
     return (
@@ -14,18 +16,24 @@ const About = () => {
                 />
                 <S.Content>
                     <S.Title className="sectionTitle">
-                        About Us
-                        <span>About</span>
+                        About
+                        <span>About Us</span>
                     </S.Title>
                     <S.SubTitle className="sectionSubTitle">
                         Best Haircut Salon
                     </S.SubTitle>
                     <S.Text>
-                        Let your hairdressers do their amazing job. Trim the hair to get
-                        your desired look. Book appointment with us for your favorite hair
-                        Styles!
+                        Welcome to Bless, where tradition and modernity blend to offer the
+                        finest grooming experience. Since 2010, we have proudly served the
+                        community with a commitment to excellence, focusing on quality and
+                        attention to detail. Our team of professional barbers is
+                        passionate about their craft, ensuring that every client receives
+                        personalized service and leaves satisfied with a refreshed look.
+                        We believe that a well-groomed beard and a perfect haircut are
+                        more than just appearance they are an expression of style and
+                        confidence.
                     </S.Text>
-                    <S.Button>Read More</S.Button>
+                    <Button1 margin="48px 0 80px">Read More</Button1>
                 </S.Content>
             </S.Container>
             <Image

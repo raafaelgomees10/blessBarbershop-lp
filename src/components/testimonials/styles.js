@@ -14,20 +14,9 @@ export const Section = styled.section`
 
     padding: 72px 0;
     position: relative;
+    z-index: 1;
 
-    &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-size: 100% auto;
-        z-index: 5;
-
-        bottom: 0;
-        background: url(${mask.src}) 0 100% no-repeat;
-    }
-
+    &::after,
     &::before {
         content: '';
         position: absolute;
@@ -35,32 +24,30 @@ export const Section = styled.section`
         width: 100%;
         height: 100%;
         background-size: 100% auto;
-        z-index: 5;
+        z-index: 0;
+    }
+
+    &::after {
+        bottom: 0;
+        background: url(${mask.src}) 0 100% no-repeat;
+    }
+
+    &::before {
         transform: rotate(180deg);
-        top: 0;
+        top: 0px;
         background: url(${mask2.src}) 0 100% no-repeat;
     }
 `;
 
-export const Title = styled.h1`
-    color: #161616;
-    font-family: ${(props) => props.theme.font.family2};
-    font-size: 6.4rem;
-    font-weight: 400;
-    position: relative;
-    z-index: 10;
+export const Container = styled.div`
+    z-index: 2;
+`;
 
+export const Title = styled.h1`
+    margin-left: 60px;
     > span {
-        position: absolute;
-        color: ${(props) => props.theme.colors.secondary};
-        font-family: ${(props) => props.theme.font.family2};
-        font-size: 3.2rem;
-        font-weight: 400;
-        z-index: 0;
         bottom: 0px;
-        left: 180px;
-        -webkit-text-stroke-width: 0.8px;
-        -webkit-text-stroke-color: #000;
+        left: 250px;
     }
 `;
 
@@ -71,6 +58,7 @@ export const Box = styled.div`
     align-items: center;
     flex-direction: column;
 `;
+
 export const Text = styled.h2`
     color: ${(props) => props.theme.colors.primary};
     font-family: ${(props) => props.theme.font.family};
@@ -86,25 +74,12 @@ export const Descrpition = styled.p`
 `;
 
 export const Content = styled.div`
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-
-    position: relative;
-    width: 100%;
-    overflow: hidden;
     .splide {
-        width: 100%;
-        padding: 0 0 24px;
-
         &__track {
             padding: 40px 0 90px !important;
         }
 
         &__slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             transition: 0.2s ease-in-out;
             margin-top: 48px;
 
@@ -115,7 +90,7 @@ export const Content = styled.div`
 
         &__arrow {
             top: 85%;
-            bottom: 0;
+            bottom: 8px;
             border-radius: 50%;
             height: 50px;
             width: 50px;
@@ -128,17 +103,18 @@ export const Content = styled.div`
             }
 
             &:hover:not(:disabled) svg {
-                fill: rgba(151, 118, 86, 0.77);
+                fill: ${(props) => props.theme.colors.secondary};
+                opacity: 0.8;
             }
 
             > svg {
-                fill: rgb(151, 118, 86);
-
+                fill: ${(props) => props.theme.colors.secondary};
                 width: 25px;
                 height: 25px;
 
                 &:hover {
-                    fill: rgba(151, 118, 86, 0.77);
+                    fill: ${(props) => props.theme.colors.secondary};
+                    opacity: 0.8;
                 }
 
                 &:focus-visible {
@@ -148,19 +124,7 @@ export const Content = styled.div`
             }
         }
         &__pagination {
-            bottom: 0px;
-
-            &__page {
-                width: 10px;
-                height: 10px;
-                border-radius: 0;
-                transform: rotate(45deg);
-                margin-right: 16px;
-
-                &.is-active {
-                    background-color: ${(props) => props.theme.colors.secondary};
-                }
-            }
+            bottom: 8px;
         }
     }
 
@@ -168,15 +132,18 @@ export const Content = styled.div`
         outline: 3px solid rgb(151, 118, 86);
         outline-offset: 3px;
     }
+    .splide:not(.is-overflow) .splide__pagination {
+        display: flex;
+    }
 `;
 
 export const Card = styled.div`
     width: 545px;
     height: 250px;
     flex-shrink: 0;
-    fill: rgba(0, 0, 0, 0.13);
+    fill: rgba(0, 0, 0, 0.15);
 
-    border: 3px solid rgba(151, 118, 86, 0.77);
+    border: 3px solid rgba(151, 118, 86, 0.8);
     border-radius: 62px;
     backdrop-filter: blur(5px);
     position: relative;
@@ -189,7 +156,7 @@ export const Card = styled.div`
         position: absolute;
         border-radius: 50%;
         object-fit: cover;
-        border: 3px solid rgba(151, 118, 86, 0.77);
+        border: 3px solid rgba(151, 118, 86, 0.8);
     }
 `;
 
@@ -217,6 +184,7 @@ export const ClientText = styled.div`
     margin: 40px 0 24px;
     max-width: 408px;
 `;
+
 export const ClientName = styled.span`
     color: ${(props) => props.theme.colors.secondary};
     display: block;

@@ -8,8 +8,8 @@ const Grooming = () => {
             <ImageWrapper>
                 <StyledImage
                     src="/images/grooming.png"
-                    alt="haircuting photos"
-                    layout="fill"
+                    alt="Fine Grooming is Timeless"
+                    fill
                 />
             </ImageWrapper>
         </Container>

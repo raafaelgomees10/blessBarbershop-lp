@@ -19,24 +19,9 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-    color: #161616;
-    font-family: ${(props) => props.theme.font.family2};
-    font-size: 6.4rem;
-    font-weight: 400;
-    position: relative;
-    z-index: 10;
-
     > span {
-        position: absolute;
-        color: ${(props) => props.theme.colors.secondary};
-        font-family: ${(props) => props.theme.font.family2};
-        font-size: 3.2rem;
-        font-weight: 400;
-        z-index: 0;
         bottom: 0px;
         left: 180px;
-        -webkit-text-stroke-width: 0.8px;
-        -webkit-text-stroke-color: #000;
     }
 `;
 
@@ -154,21 +139,4 @@ export const Line = styled.div`
         left: 0px;
         transform: rotate(45deg);
     }
-`;
-
-export const Button = styled.button`
-    display: flex;
-    padding: 16px 24px;
-    align-items: flex-start;
-    gap: 10px;
-    background: ${(props) => props.theme.colors.secondary};
-    border: none;
-    color: ${(props) => props.theme.colors.primary};
-    width: 130px;
-    margin: 32px auto 0;
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 4px;
 `;

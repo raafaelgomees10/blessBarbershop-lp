@@ -2,6 +2,8 @@ import React from 'react';
 import Icon from '../icons';
 import * as S from './styles';
 import Header from '../header';
+import Button2 from '../buttons/button2';
+import Button1 from '../buttons/button1';
 
 const HomeBless = () => {
     return (
@@ -18,7 +20,7 @@ const HomeBless = () => {
                         Whether you are in need of a classic haircut, straight razor
                         shave, or beard trim, we have got you covered.
                     </S.Text>
-                    <S.Button>Book a haircut</S.Button>
+                    <Button1 margin="48px 0 80px">Book a haircut</Button1>
 
                     <S.Social>
                         <div>

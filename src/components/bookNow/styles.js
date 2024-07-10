@@ -33,19 +33,3 @@ export const Text = styled.p`
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #000;
 `;
-
-export const Button = styled.button`
-    display: flex;
-    padding: 16px 24px;
-    align-items: flex-start;
-    gap: 10px;
-    background: ${(props) => props.theme.colors.secondary};
-    border: none;
-    color: ${(props) => props.theme.colors.primary};
-
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 4px;
-`;

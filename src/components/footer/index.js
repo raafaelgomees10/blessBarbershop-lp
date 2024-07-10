@@ -53,7 +53,7 @@ const Footer = () => {
                             <S.BlockItem className="hasIcon">
                                 <Icon icon="barber" width="16px" height="48px" />
                                 Mayor Street Upper, Point Village,
-                                <br /> D01 YB82, Dublin, Ireland 
+                                <br /> D01 YB82, Dublin, Ireland
                             </S.BlockItem>
 
                             <S.BlockItem>
@@ -89,7 +89,10 @@ const Footer = () => {
                 <S.Copy>
                     <div>Bless Barbershop. 2024 All Rights Reserved.</div>
                     <div>
-                        Design and Developed by <a>Rafael Gomes.</a>
+                        Design and Developed by{' '}
+                        <a href="https://rafaelgomes.netlify.app?utm_source=lp_blessBarbershop&utm_medium=footer&utm_campaign=lp_blessBarbershop">
+                            Rafael Gomes.
+                        </a>
                     </div>
                 </S.Copy>
             </S.Container>

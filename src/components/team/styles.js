@@ -10,36 +10,15 @@ export const Section = styled.section`
 `;
 
 export const Title = styled.h1`
-    color: #161616;
-    font-family: ${(props) => props.theme.font.family2};
-    font-size: 6.4rem;
-    font-weight: 400;
-    position: relative;
-    z-index: 10;
     margin-bottom: 16px;
+
     > span {
-        position: absolute;
-        color: ${(props) => props.theme.colors.secondary};
-        font-family: ${(props) => props.theme.font.family2};
-        font-size: 3.2rem;
-        font-weight: 400;
-        z-index: 0;
         bottom: 5px;
         left: 130px;
-        -webkit-text-stroke-width: 0.8px;
-        -webkit-text-stroke-color: #000;
     }
 `;
 
 export const Content = styled.div`
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-
     &::before,
     &::after {
         content: '';
@@ -61,38 +40,20 @@ export const Content = styled.div`
     }
 
     .splide {
-        width: 100%;
-        padding: 0 0 24px;
-
         &__track {
             padding: 40px 0 !important;
         }
-        &__slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+
         &__pagination {
             bottom: 0px;
-
-            &__page {
-                width: 10px;
-                height: 10px;
-                border-radius: 0;
-                transform: rotate(45deg);
-                margin-right: 16px;
-
-                &.is-active {
-                    background-color: ${(props) => props.theme.colors.secondary};
-                }
-            }
+            padding: 8px;
         }
     }
 `;
 
 export const Member = styled.div`
     background: url(${teamMockup.src}) no-repeat center center;
-    background-size: contain; /* Garante que o background se ajuste corretamente */
+    background-size: contain;
     min-height: 420px;
     flex-shrink: 0;
     min-width: 290px;

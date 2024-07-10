@@ -31,69 +31,71 @@ const Testimonials = () => {
 
     return (
         <S.Section id="Testimonials">
-            <S.Title>
-                Testimonials
-                <span>Testimonials</span>
-            </S.Title>
-            <S.Box>
-                <S.Text>What Our Clients Say</S.Text>
-                <S.Descrpition>
-                    Let your hairdressers do their amazing job. Trim the hair to get your
-                    desired look. Book appointment with us for your favorite hair Styles!
-                </S.Descrpition>
-            </S.Box>
+            <S.Container>
+                <S.Title className="sectionTitle">
+                    Testimonials
+                    <span>Testimonials</span>
+                </S.Title>
+                <S.Box>
+                    <S.Text>What Our Clients Say</S.Text>
+                    <S.Descrpition>
+                        See what our satisfied customers have to say about our services.
+                        Their opinion is fundamental to our growth and excellence.
+                    </S.Descrpition>
+                </S.Box>
 
-            <S.Content>
-                <Splide
-                    options={{
-                        rewind: false,
-                        perPage: 3,
-                        perMove: 1,
-                        gap: '40rem',
-                        autoplay: true,
-                        focus: 'center',
-                        omitEnd: true,
-                        type: 'loop',
-                        breakpoints: {
-                            767: {
-                                gap: '4rem',
-                                perPage: 1,
-                                pagination: false,
-                            },
+                <S.Content className="customSlide">
+                    <Splide
+                        options={{
+                            rewind: false,
+                            perPage: 3,
+                            perMove: 1,
+                            gap: '40rem',
+                            autoplay: true,
+                            focus: 'center',
+                            omitEnd: true,
+                            type: 'loop',
+                            breakpoints: {
+                                767: {
+                                    gap: '4rem',
+                                    perPage: 1,
+                                    pagination: false,
+                                },
 
-                            1199: {
-                                gap: '3rem',
-                            },
-                            1366: {
-                                gap: '40rem',
-                            },
+                                1199: {
+                                    gap: '3rem',
+                                },
+                                1366: {
+                                    gap: '40rem',
+                                },
 
-                            1920: {
-                                gap: '4rem',
+                                1920: {
+                                    gap: '4rem',
+                                },
                             },
-                        },
-                    }}
-                >
-                    {testmonials.map((client, index) => (
-                        <SplideSlide key={client.name}>
-                            <S.Card>
-                                <Image
-                                    width={80}
-                                    height={80}
-                                    src={`/images/${client.image}.jpg`}
-                                    alt="haircuting photos"
-                                />
-                                <S.ClientInfo>
-                                    <Icon icon="quote" width="30px" height="21" />
-                                    <S.ClientText>{client.text}</S.ClientText>
-                                    <Icon icon="quote" width="30px" height="21" />
-                                    <S.ClientName>{client.name}</S.ClientName>
-                                </S.ClientInfo>
-                            </S.Card>
-                        </SplideSlide>
-                    ))}
-                </Splide>
-            </S.Content>
+                        }}
+                    >
+                        {testmonials.map((client) => (
+                            <SplideSlide key={client.name}>
+                                <S.Card>
+                                    <Image
+                                        width={80}
+                                        height={80}
+                                        src={`/images/${client.image}.jpg`}
+                                        alt="haircuting photos"
+                                    />
+                                    <S.ClientInfo>
+                                        <Icon icon="quote" width="30px" height="21" />
+                                        <S.ClientText>{client.text}</S.ClientText>
+                                        <Icon icon="quote" width="30px" height="21" />
+                                        <S.ClientName>{client.name}</S.ClientName>
+                                    </S.ClientInfo>
+                                </S.Card>
+                            </SplideSlide>
+                        ))}
+                    </Splide>
+                </S.Content>
+            </S.Container>
         </S.Section>
     );
 };

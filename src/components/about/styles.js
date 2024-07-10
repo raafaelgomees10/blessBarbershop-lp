@@ -26,12 +26,15 @@ export const Container = styled.div`
 export const Content = styled.div`
     width: 463px;
     justify-self: flex-end;
+    position: relative;
 `;
 
 export const Title = styled.h2`
+    left: -130px;
+    top: -15px;
     > span {
-        top: -43px;
-        left: -155px;
+        bottom: 0;
+        left: 130px;
     }
 `;
 
@@ -44,21 +47,4 @@ export const Text = styled.p`
     font-size: 1.8rem;
     font-weight: 400;
     color: ${(props) => props.theme.colors.text};
-`;
-
-export const Button = styled.button`
-    display: flex;
-    padding: 16px 24px;
-    align-items: flex-start;
-    gap: 10px;
-    background: ${(props) => props.theme.colors.secondary};
-    border: none;
-    color: ${(props) => props.theme.colors.primary};
-
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin: 48px 0 80px;
-    border-radius: 4px;
 `;
