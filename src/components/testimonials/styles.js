@@ -37,6 +37,10 @@ export const Section = styled.section`
         top: 0px;
         background: url(${mask2.src}) 0 100% no-repeat;
     }
+
+    @media (max-width: 767px) {
+        min-height: unset;
+    }
 `;
 
 export const Container = styled.div`
@@ -50,6 +54,17 @@ export const Title = styled.h1`
     > span {
         bottom: 0px;
         left: 250px;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 370px;
+        padding: 0;
+        font-size: 4.6rem;
+
+        > span {
+            bottom: -5px;
+            left: 75px;
+        }
     }
 `;
 
@@ -66,6 +81,11 @@ export const Text = styled.h2`
     font-family: ${(props) => props.theme.font.family};
     font-size: 4.8rem;
     font-weight: 700;
+
+    @media (max-width: 767px) {
+        font-size: 3.2rem;
+        letter-spacing: 1px;
+    }
 `;
 
 export const Descrpition = styled.p`
@@ -73,12 +93,21 @@ export const Descrpition = styled.p`
     font-size: 1.8rem;
     max-width: 640px;
     margin: 32px 0 48px;
+
+    @media (max-width: 767px) {
+        font-size: 1.4rem;
+        max-width: 310px;
+    }
 `;
 
 export const Content = styled.div`
     .splide {
         &__track {
             padding: 40px 0 90px !important;
+        }
+
+        &__pagination {
+            bottom: 8px;
         }
 
         &__slide {
@@ -124,9 +153,18 @@ export const Content = styled.div`
                     outline-offset: 3px;
                 }
             }
-        }
-        &__pagination {
-            bottom: 8px;
+            @media (max-width: 767px) {
+                top: 70%;
+                height: 40px;
+                width: 40px;
+
+                &--prev {
+                    left: 20% !important;
+                }
+                &--next {
+                    right: 20% !important;
+                }
+            }
         }
     }
 
@@ -159,6 +197,15 @@ export const Card = styled.div`
         border-radius: 50%;
         object-fit: cover;
         border: 3px solid rgba(151, 118, 86, 0.8);
+
+        @media (max-width: 767px) {
+            top: -30px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        height: 185px;
+        width: 359px;
     }
 `;
 
@@ -176,6 +223,13 @@ export const ClientInfo = styled.div`
             transform: rotate(180deg);
             bottom: 32px;
         }
+
+        @media (max-width: 767px) {
+            &:first-of-type {
+                top: 16px;
+                left: 10px;
+            }
+        }
     }
 `;
 
@@ -185,6 +239,11 @@ export const ClientText = styled.div`
     font-style: italic;
     margin: 40px 0 24px;
     max-width: 408px;
+
+    @media (max-width: 767px) {
+        font-size: 1.4rem;
+        max-width: 325px;
+    }
 `;
 
 export const ClientName = styled.span`
@@ -193,4 +252,8 @@ export const ClientName = styled.span`
     text-align: center;
     font-size: 2.8rem;
     font-weight: 700;
+
+    @media (max-width: 767px) {
+        font-size: 2.2rem;
+    }
 `;

@@ -2,10 +2,13 @@ import React from 'react';
 import Icon from '../icons';
 import * as S from './styles';
 import Image from 'next/image';
+import useMedia from '@/hooks/useMedia';
 import '@splidejs/react-splide/css/sea-green';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 
 const Testimonials = () => {
+    const mobile = useMedia('(max-width:767px)');
+
     const testmonials = [
         {
             name: 'Luke Belling',
@@ -51,15 +54,14 @@ const Testimonials = () => {
                             perPage: 3,
                             perMove: 1,
                             gap: '40rem',
-                            autoplay: true,
+                            // autoplay: true,
                             focus: 'center',
                             omitEnd: true,
                             type: 'loop',
                             breakpoints: {
                                 767: {
-                                    gap: '4rem',
+                                    gap: '2rem',
                                     perPage: 1,
-                                    pagination: false,
                                 },
 
                                 1199: {
@@ -79,15 +81,23 @@ const Testimonials = () => {
                             <SplideSlide key={client.name}>
                                 <S.Card>
                                     <Image
-                                        width={80}
-                                        height={80}
+                                        width={!mobile ? 80 : 60}
+                                        height={!mobile ? 80 : 60}
                                         src={`/images/${client.image}.jpg`}
                                         alt="haircuting photos"
                                     />
                                     <S.ClientInfo>
-                                        <Icon icon="quote" />
+                                        <Icon
+                                            icon="quote"
+                                            width={!mobile ? '30px' : '22px'}
+                                            height={!mobile ? '21px' : '18px'}
+                                        />
                                         <S.ClientText>{client.text}</S.ClientText>
-                                        <Icon icon="quote" />
+                                        <Icon
+                                            icon="quote"
+                                            width={!mobile ? '30px' : '22px'}
+                                            height={!mobile ? '21px' : '18px'}
+                                        />
                                         <S.ClientName>{client.name}</S.ClientName>
                                     </S.ClientInfo>
                                 </S.Card>

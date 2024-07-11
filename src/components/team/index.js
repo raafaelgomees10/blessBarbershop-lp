@@ -49,7 +49,7 @@ const Team = () => {
                         },
                         breakpoints: {
                             767: {
-                                gap: '2rem',
+                                gap: '1rem',
                                 perPage: 1,
                             },
 

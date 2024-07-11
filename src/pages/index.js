@@ -27,8 +27,8 @@ export default function Home() {
                 <Services />
                 <Grooming />
                 <Team />
-                {/*<Testimonials />
-                <Footer /> */}
+                <Testimonials />
+                <Footer />
             </main>
         </>
     );
