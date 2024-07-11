@@ -7,6 +7,11 @@ export const Section = styled.section`
     padding: 32px 48px;
     max-width: 1300px;
     margin: 0 auto;
+
+    @media (max-width: 767px) {
+        max-width: 375px;
+        padding: 32px 0;
+    }
 `;
 
 export const Title = styled.h1`
@@ -15,6 +20,12 @@ export const Title = styled.h1`
     > span {
         bottom: 5px;
         left: 130px;
+    }
+
+    @media (max-width: 767px) {
+        > span {
+            bottom: -5px;
+        }
     }
 `;
 
@@ -76,12 +87,21 @@ export const Member = styled.div`
             color: #000;
         }
     }
+
+    @media (max-width: 767px) {
+        min-height: 345px;
+        min-width: 253px;
+    }
 `;
 
 export const ImageContainer = styled.div`
     bottom: 5px;
     left: -10px;
     position: absolute;
+
+    @media (max-width: 767px) {
+        left: 3px;
+    }
 `;
 
 export const Name = styled.div`
@@ -102,5 +122,14 @@ export const Name = styled.div`
         color: #cecece;
         font-size: 3.6rem;
         margin-top: 12px;
+    }
+
+    @media (max-width: 767px) {
+        width: 265px;
+        height: 115px;
+        left: 0px;
+        > span {
+            font-size: 3rem;
+        }
     }
 `;

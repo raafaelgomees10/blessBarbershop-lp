@@ -1,11 +1,14 @@
 import React from 'react';
 import * as S from './styles';
 import Image from 'next/image';
+import useMedia from '@/hooks/useMedia';
 import '@splidejs/react-splide/css/sea-green';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 const Team = () => {
+    const mobile = useMedia('(max-width:767px)');
+
     const members = [
         {
             name: 'Luke Santos',
@@ -46,9 +49,8 @@ const Team = () => {
                         },
                         breakpoints: {
                             767: {
-                                gap: '4rem',
+                                gap: '2rem',
                                 perPage: 1,
-                                pagination: false,
                             },
 
                             1199: {
@@ -66,8 +68,8 @@ const Team = () => {
                                     className={`${member.image} image-container`}
                                 >
                                     <Image
-                                        width={310}
-                                        height={440}
+                                        width={!mobile ? 310 : 250}
+                                        height={!mobile ? 440 : 340}
                                         src={`/images/${member.image}.webp`}
                                         alt={`Member ${member.name}`}
                                     />

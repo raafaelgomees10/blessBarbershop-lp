@@ -25,9 +25,9 @@ export default function Home() {
                 <About />
                 <BookNow />
                 <Services />
-                {/*<Grooming />
+                <Grooming />
                 <Team />
-                <Testimonials />
+                {/*<Testimonials />
                 <Footer /> */}
             </main>
         </>

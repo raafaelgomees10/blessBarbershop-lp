@@ -30,6 +30,10 @@ const ImageWrapper = styled.div`
     @media (min-width: 1919px) {
         height: 460px;
     }
+
+    @media (max-width: 767px) {
+        height: 270px;
+    }
 `;
 
 const StyledImage = styled(Image)`
