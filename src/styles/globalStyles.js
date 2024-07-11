@@ -43,7 +43,7 @@ body {
 	position: relative;
 	z-index: 10;
 
-	>span {
+	> span {
 		position: absolute;
 		color: ${(props) => props.theme.colors.secondary};
 		font-family: ${(props) => props.theme.font.family2};
@@ -52,6 +52,11 @@ body {
 		z-index: 0;
 		-webkit-text-stroke-width: 0.8px;
 		-webkit-text-stroke-color: #000;
+	}
+
+	@media (max-width: 767px) {
+    	text-align: center;
+		font-size: 5rem;
 	}
 }
 

@@ -33,6 +33,11 @@ const Button = styled.button`
     &:hover {
         background: rgba(151, 118, 86, 0.1);
     }
+
+    @media (max-width: 767px) {
+        font-size: 1.3rem;
+        padding: 8px 16px;
+    }
 `;
 
 const Horizontal = styled.div`

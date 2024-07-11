@@ -4,6 +4,9 @@ import servicesBg from '../../../public/images/bgService.png';
 export const Section = styled.section`
     background: url(${servicesBg.src}) 50% / cover no-repeat;
     padding: 77px 60px;
+    @media (max-width: 767px) {
+        padding: 0;
+    }
 `;
 
 export const Container = styled.div`
@@ -16,12 +19,22 @@ export const Container = styled.div`
             justify-content: center;
         }
     }
+
+    @media (max-width: 767px) {
+        max-width: 320px;
+        margin: 0 auto;
+    }
 `;
 
 export const Title = styled.h1`
     > span {
         bottom: 0px;
         left: 180px;
+
+        @media (max-width: 767px) {
+            left: 95px;
+            bottom: -10px;
+        }
     }
 `;
 
@@ -51,6 +64,12 @@ export const ServicesList = styled.ul`
             opacity: 1;
         }
 
+        @media (max-width: 767px) {
+            padding-bottom: 24px;
+            width: 29%;
+            font-size: 2rem;
+        }
+
         &:not(:last-of-type) {
             &::after {
                 position: absolute;
@@ -61,6 +80,13 @@ export const ServicesList = styled.ul`
                 bottom: -5px;
                 right: -25px;
                 transform: rotate(45deg);
+
+                @media (max-width: 767px) {
+                    bottom: -4px;
+                    right: -15px;
+                    width: 7px;
+                    height: 7px;
+                }
             }
         }
     }
@@ -75,6 +101,10 @@ export const Content = styled.div`
 export const CutsList = styled.ul`
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
 
     > li {
         width: 100%;
@@ -95,6 +125,9 @@ export const Cut = styled.div`
 
     -webkit-text-stroke-width: 0.4px;
     -webkit-text-stroke-color: #000;
+    @media (max-width: 767px) {
+        font-size: 1.6rem;
+    }
 `;
 
 export const LineContainer = styled.div`
@@ -109,6 +142,9 @@ export const LineContainer = styled.div`
 export const Price = styled.div`
     font-size: 2.6rem;
     font-family: ${(props) => props.theme.font.family4};
+    @media (max-width: 767px) {
+        font-size: 1.6rem;
+    }
 `;
 
 export const Line = styled.div`
@@ -139,5 +175,8 @@ export const Line = styled.div`
         bottom: -4px;
         left: 0px;
         transform: rotate(45deg);
+    }
+    @media (max-width: 767px) {
+        top: -10px;
     }
 `;

@@ -23,9 +23,9 @@ export default function Home() {
             <main>
                 <HomeBless />
                 <About />
-                {/*<BookNow />
+                <BookNow />
                 <Services />
-                <Grooming />
+                {/*<Grooming />
                 <Team />
                 <Testimonials />
                 <Footer /> */}
