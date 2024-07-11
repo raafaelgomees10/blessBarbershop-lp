@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const Container = styled.header`
     display: flex;
@@ -10,9 +10,13 @@ export const Container = styled.header`
     position: fixed;
     z-index: 1000;
     transition: padding 0.3s;
+
     &.scrolled {
         padding: 0;
         background: rgba(0, 0, 0, 0.35);
+    }
+    @media (min-width: 767px) and (max-width: 1199px) {
+        padding: 16px 0;
     }
 
     @media (max-width: 767px) {
@@ -77,6 +81,10 @@ export const List = styled.ul`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (min-width: 767px) and (max-width: 1199px) {
+        padding: 0 16px;
+    }
 
     @media (max-width: 767px) {
         flex-direction: column;

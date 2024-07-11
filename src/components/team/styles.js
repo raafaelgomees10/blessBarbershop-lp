@@ -8,6 +8,11 @@ export const Section = styled.section`
     max-width: 1300px;
     margin: 0 auto;
 
+    @media (min-width: 768px) and (max-width: 1199px) {
+        max-width: 980px;
+        padding: 32px 0;
+    }
+
     @media (max-width: 767px) {
         max-width: 375px;
         padding: 32px 0;
@@ -22,6 +27,11 @@ export const Title = styled.h1`
         left: 130px;
     }
 
+    @media (min-width: 768px) and (max-width: 1199px) {
+        > span {
+            left: 380px;
+        }
+    }
     @media (max-width: 767px) {
         > span {
             bottom: -5px;

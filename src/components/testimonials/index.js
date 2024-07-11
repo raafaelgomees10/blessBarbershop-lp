@@ -65,7 +65,8 @@ const Testimonials = () => {
                                 },
 
                                 1199: {
-                                    gap: '3rem',
+                                    perPage: 1,
+                                    gap: '2rem',
                                 },
                                 1366: {
                                     gap: '40rem',

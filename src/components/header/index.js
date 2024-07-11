@@ -142,7 +142,7 @@ const Header = () => {
                     </S.List>
                 </S.Nav>
             </S.Container>
-            <S.Spacer height={!mobile ? headerHeight : 40} isMobile={mobile} />
+            <S.Spacer height={!mobile ? headerHeight : 40} />
         </>
     );
 };

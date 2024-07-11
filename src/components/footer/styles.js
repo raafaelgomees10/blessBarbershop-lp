@@ -1,13 +1,11 @@
 import styled from 'styled-components';
-// import FooterBg from '../../../public/images/bgFooter.png';
 
 export const Footer = styled.footer`
     width: 100%;
     padding: 120px 0 32px;
-    /* background: url(${FooterBg.src}) 50% / contain no-repeat; */
     background-color: #0d0d0d;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
         padding: 64px 0 16px;
     }
 `;
@@ -24,7 +22,7 @@ export const Content = styled.div`
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
         flex-direction: column;
         align-items: center;
     }
@@ -35,6 +33,10 @@ export const Infos = styled.div`
     max-width: 880px;
     display: flex;
     justify-content: space-between;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        padding: 32px 16px 0;
+    }
 
     @media (max-width: 767px) {
         flex-direction: column;
@@ -76,7 +78,7 @@ export const OpenDays = styled.div`
         left: -60px;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
         display: flex;
         position: unset;
 
@@ -121,6 +123,11 @@ export const Newsletter = styled.div`
     font-weight: 700;
     width: 290px;
     align-self: flex-end;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        padding-right: 16px;
+        margin-right: 16px;
+    }
 
     @media (max-width: 767px) {
         align-self: flex-start;

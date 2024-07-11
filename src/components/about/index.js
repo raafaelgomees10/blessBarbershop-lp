@@ -1,8 +1,8 @@
 import React from 'react';
 import * as S from './styles';
 import Image from 'next/image';
-import Button1 from '../buttons/button1';
 import useMedia from '@/hooks/useMedia';
+import Button1 from '../buttons/button1';
 
 const About = () => {
     const mobile = useMedia('(max-width:767px)');
@@ -40,7 +40,7 @@ const About = () => {
                     </Button1>
                 </S.Content>
             </S.Container>
-            {/* AJUSTAR POSIÇÃO IMAGEM MOBILE */}
+
             <Image
                 width={!mobile ? 780 : 375}
                 height={!mobile ? 367 : 171}

@@ -9,6 +9,16 @@ export const Section = styled.section`
         bottom: 0;
         right: 0;
         z-index: -1;
+
+        @media (max-width: 1199px) {
+            bottom: unset;
+            top: 240px;
+        }
+
+        @media (max-width: 767px) {
+            top: 382px;
+            right: 0px;
+        }
     }
 `;
 
@@ -23,17 +33,21 @@ export const Container = styled.div`
         padding: 64px 0;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
         grid-template-columns: 1fr;
         grid-template-areas:
             'content'
             'image';
-        padding: 0;
+        padding: 16px;
         justify-items: center;
 
         > img {
             grid-area: image;
         }
+    }
+
+    @media (max-width: 767px) {
+        padding: 0;
     }
 `;
 
@@ -42,11 +56,14 @@ export const Content = styled.div`
     justify-self: flex-end;
     position: relative;
 
-    @media (max-width: 767px) {
-        max-width: 320px;
+    @media (max-width: 1199px) {
         justify-self: center;
         text-align: center;
         grid-area: content;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 320px;
     }
 `;
 
@@ -58,10 +75,15 @@ export const Title = styled.h2`
         left: 130px;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
         left: -30px;
         top: 0;
 
+        > span {
+            left: 180px;
+        }
+    }
+    @media (max-width: 767px) {
         > span {
             left: 110px;
         }
@@ -70,7 +92,7 @@ export const Title = styled.h2`
 
 export const SubTitle = styled.h1`
     margin: 28px 0 44px;
-
+    letter-spacing: 0.5px;
     @media (max-width: 767px) {
         margin: 40px 0;
     }

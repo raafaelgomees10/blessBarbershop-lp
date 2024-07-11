@@ -13,6 +13,10 @@ export const Container = styled.div`
     max-width: 1100px;
     width: 100%;
 
+    @media (min-width: 768px) and (max-width: 1199px) {
+        max-width: 760px;
+    }
+
     @media (max-width: 767px) {
         max-width: 340px;
         text-align: center;

@@ -50,10 +50,16 @@ export const Container = styled.div`
 export const Title = styled.h1`
     margin: 0 auto;
     padding: 0 48px;
-    max-width: 1300px;
+    max-width: 1200px;
     > span {
         bottom: 0px;
         left: 250px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        > span {
+            left: 320px;
+        }
     }
 
     @media (max-width: 767px) {

@@ -55,8 +55,10 @@ body {
 	}
 
 	@media (max-width: 767px) {
-    	text-align: center;
 		font-size: 5rem;
+	}
+	@media (max-width: 1199px) {
+    	text-align: center;
 	}
 }
 

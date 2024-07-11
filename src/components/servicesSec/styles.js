@@ -31,6 +31,11 @@ export const Title = styled.h1`
         bottom: 0px;
         left: 180px;
 
+        @media (min-width: 768px) and (max-width: 1199px) {
+            left: 300px;
+            bottom: 0px;
+        }
+
         @media (max-width: 767px) {
             left: 95px;
             bottom: -10px;
@@ -64,6 +69,12 @@ export const ServicesList = styled.ul`
             opacity: 1;
         }
 
+        @media (min-width: 768px) and (max-width: 1199px) {
+            padding-bottom: 32px;
+            width: 30%;
+            font-size: 3.2rem;
+        }
+
         @media (max-width: 767px) {
             padding-bottom: 24px;
             width: 29%;
@@ -80,6 +91,10 @@ export const ServicesList = styled.ul`
                 bottom: -5px;
                 right: -25px;
                 transform: rotate(45deg);
+
+                @media (min-width: 768px) and (max-width: 1199px) {
+                    right: -21px;
+                }
 
                 @media (max-width: 767px) {
                     bottom: -4px;
@@ -102,7 +117,11 @@ export const CutsList = styled.ul`
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @media (max-width: 767px) {
+    @media (min-width: 768px) and (max-width: 1199px) {
+        justify-items: center;
+    }
+
+    @media (max-width: 1199px) {
         grid-template-columns: 1fr;
     }
 
@@ -125,6 +144,7 @@ export const Cut = styled.div`
 
     -webkit-text-stroke-width: 0.4px;
     -webkit-text-stroke-color: #000;
+
     @media (max-width: 767px) {
         font-size: 1.6rem;
     }
@@ -142,6 +162,7 @@ export const LineContainer = styled.div`
 export const Price = styled.div`
     font-size: 2.6rem;
     font-family: ${(props) => props.theme.font.family4};
+
     @media (max-width: 767px) {
         font-size: 1.6rem;
     }

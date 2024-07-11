@@ -54,8 +54,8 @@ const Team = () => {
                             },
 
                             1199: {
-                                perPage: 3,
-                                gap: '3rem',
+                                perPage: 2,
+                                gap: '6rem',
                             },
                         },
                     }}
