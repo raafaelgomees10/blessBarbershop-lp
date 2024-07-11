@@ -19,7 +19,6 @@ const stripeSlide = keyframes`
 `;
 
 const Button = styled.button`
-    margin: ${(props) => (props.$existsMargin ? props.$existsMargin : 0)};
     background: ${(props) => props.theme.colors.secondary};
     border: 2px solid #1f1811;
     border-radius: 6px;
@@ -28,6 +27,7 @@ const Button = styled.button`
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 0.15rem;
+    margin: ${(props) => (props.$existsMargin ? props.$existsMargin : 0)};
     padding: 16px 24px;
     position: relative;
     text-transform: uppercase;
@@ -70,5 +70,8 @@ const Button = styled.button`
             border-top: 1px solid #000;
             animation: ${stripeSlide} 12s infinite linear forwards;
         }
+    }
+
+    @media (max-width: 767px) {
     }
 `;

@@ -1,13 +1,17 @@
 import * as S from './styles';
-import React, { useEffect, useRef, useState } from 'react';
-import Logo from '../../../public/svg/logo.svg';
 import Image from 'next/image';
 import { Link } from 'react-scroll';
+import useMedia from '@/hooks/useMedia';
+import Logo from '../../../public/svg/logo.svg';
+import React, { useEffect, useRef, useState } from 'react';
 
 const Header = () => {
+    const [mobileMenu, setMobileMenu] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const [headerHeight, setHeaderHeight] = useState(0);
     const headerRef = useRef(null);
+
+    const mobile = useMedia('(max-width:767px)');
 
     useEffect(() => {
         const handleScroll = () => {
@@ -33,7 +37,19 @@ const Header = () => {
     return (
         <>
             <S.Container ref={headerRef} className={isScrolled ? 'scrolled' : ''}>
-                <S.Nav>
+                {mobile && (
+                    <S.MobileButton
+                        className={mobileMenu && 'active'}
+                        aria-label="Menu"
+                        onClick={() => setMobileMenu(!mobileMenu)}
+                    />
+                )}
+
+                <S.Nav
+                    className={`${mobile && 'navMobile'} ${
+                        mobileMenu && 'navMobileActive'
+                    }`}
+                >
                     <S.List>
                         <li>
                             <Link
@@ -74,7 +90,7 @@ const Header = () => {
                             </Link>
                         </li>
 
-                        <li>
+                        <li className="image">
                             <S.LogoContainer>
                                 <Image
                                     src={Logo}
@@ -126,7 +142,7 @@ const Header = () => {
                     </S.List>
                 </S.Nav>
             </S.Container>
-            <S.Spacer height={headerHeight} />
+            <S.Spacer height={!mobile ? headerHeight : 40} isMobile={mobile} />
         </>
     );
 };

@@ -9,6 +9,7 @@ import Team from '@/components/team';
 import Testimonials from '@/components/testimonials';
 import Footer from '@/components/footer';
 import Grooming from '@/components/grooming';
+import Header from '@/components/header';
 
 export default function Home() {
     return (
@@ -22,12 +23,12 @@ export default function Home() {
             <main>
                 <HomeBless />
                 <About />
-                <BookNow />
+                {/*<BookNow />
                 <Services />
                 <Grooming />
                 <Team />
                 <Testimonials />
-                <Footer />
+                <Footer /> */}
             </main>
         </>
     );
