@@ -2,14 +2,17 @@ import React from 'react';
 import * as S from './styles';
 import Image from 'next/image';
 import Button1 from '../buttons/button1';
+import useMedia from '@/hooks/useMedia';
 
 const About = () => {
+    const mobile = useMedia('(max-width:767px)');
+
     return (
         <S.Section id="about">
             <S.Container>
                 <Image
-                    width={375}
-                    height={453}
+                    width={!mobile ? 375 : 325}
+                    height={!mobile ? 453 : 375}
                     src="/images/fotos.png"
                     alt="hair cutting photos"
                 />
@@ -32,12 +35,15 @@ const About = () => {
                         more than just appearance they are an expression of style and
                         confidence.
                     </S.Text>
-                    <Button1 margin="48px 0 80px">Read More</Button1>
+                    <Button1 margin={!mobile ? '48px 0 80px' : '40px 0 48px'}>
+                        Read More
+                    </Button1>
                 </S.Content>
             </S.Container>
+            {/* AJUSTAR POSIÇÃO IMAGEM MOBILE */}
             <Image
-                width={780}
-                height={367}
+                width={!mobile ? 780 : 375}
+                height={!mobile ? 367 : 171}
                 src="/images/about-shape.webp"
                 alt="hair cutting tools"
             />
