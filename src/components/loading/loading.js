@@ -89,7 +89,6 @@ const LogoContainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 3rem;
     position: absolute;
     left: 50%;
     width: 600px;
@@ -121,6 +120,10 @@ const WelcomeText = styled.div`
         letter-spacing: 2px;
         display: inline-block;
         animation: ${floating} 1s ease-out infinite alternate;
+
+        @media (max-width: 767px) {
+            font-size: 3.2rem;
+        }
     }
     &::after {
         content: '';

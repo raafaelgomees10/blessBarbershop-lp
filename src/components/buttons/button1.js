@@ -75,7 +75,4 @@ const Button = styled.button`
             animation: ${stripeSlide} 12s infinite linear forwards;
         }
     }
-
-    @media (max-width: 767px) {
-    }
 `;

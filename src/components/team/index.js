@@ -43,7 +43,7 @@ const Team = () => {
                         focus: 'center',
                         omitEnd: true,
                         type: 'loop',
-                        gap: '1rem',
+                        gap: '2rem',
                         autoScroll: {
                             speed: 0.7,
                         },
