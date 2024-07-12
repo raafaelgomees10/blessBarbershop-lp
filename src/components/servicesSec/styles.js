@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import servicesBg from '../../../public/images/bgService.png';
+import servicesBg from '../../../public/images/bgService.webp';
 
 export const Section = styled.section`
     background: url(${servicesBg.src}) 50% / cover no-repeat;

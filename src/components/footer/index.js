@@ -80,7 +80,7 @@ const Footer = () => {
                     <S.FormGroup>
                         <S.Input placeholder="E-mail" id="email" required />
                         <S.Label htmlFor="email">E-mail</S.Label>
-                        <S.Button>
+                        <S.Button aria-label="sendEmail">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="49"

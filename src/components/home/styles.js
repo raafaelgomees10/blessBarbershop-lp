@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import bgHome from '../../../public/images/bgHome.png';
-import bgHome2x from '../../../public/images/bgHome2x.png';
+import bgHome from '../../../public/images/bgHome.webp';
+import bgHome2x from '../../../public/images/bgHome2x.webp';
 
 export const Section = styled.section`
     background: url(${bgHome.src}) 50% / cover no-repeat;

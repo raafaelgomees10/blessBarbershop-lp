@@ -84,7 +84,7 @@ const Testimonials = () => {
                                     <Image
                                         width={!mobile ? 80 : 60}
                                         height={!mobile ? 80 : 60}
-                                        src={`/images/${client.image}.jpg`}
+                                        src={`/images/${client.image}.webp`}
                                         alt="haircuting photos"
                                     />
                                     <S.ClientInfo>

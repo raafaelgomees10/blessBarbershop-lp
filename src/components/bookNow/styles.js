@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Bgt from '../../../public/images/bgBook.png';
+import Bgt from '../../../public/images/bgBook.webp';
 
 export const Section = styled.section`
     align-items: center;

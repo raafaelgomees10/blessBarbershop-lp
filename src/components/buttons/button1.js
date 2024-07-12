@@ -2,7 +2,11 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const Button1 = ({ children, margin }) => {
-    return <Button $existsMargin={margin}>{children}</Button>;
+    return (
+        <Button aria-label="button1" $existsMargin={margin}>
+            {children}
+        </Button>
+    );
 };
 
 export default Button1;

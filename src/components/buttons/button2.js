@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Button2 = ({ children, margin }) => {
     return (
-        <Button $existsMargin={margin}>
+        <Button aria-label="button2" $existsMargin={margin}>
             {children}
             <Horizontal />
             <Vertical />

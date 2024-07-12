@@ -7,7 +7,7 @@ const Grooming = () => {
         <Container>
             <ImageWrapper>
                 <StyledImage
-                    src="/images/grooming.png"
+                    src="/images/grooming.webp"
                     alt="Fine Grooming is Timeless"
                     fill
                 />

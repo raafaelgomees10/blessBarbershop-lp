@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import teamBg from '../../../public/images/team_bg.webp';
 import teamBg2 from '../../../public/images/team_bg2.webp';
-import teamMockup from '../../../public/images/team_mockup.png';
+import teamMockup from '../../../public/images/team_mockup.webp';
 
 export const Section = styled.section`
     padding: 32px 48px;

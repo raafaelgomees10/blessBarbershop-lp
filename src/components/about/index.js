@@ -13,7 +13,7 @@ const About = () => {
                 <Image
                     width={!mobile ? 375 : 325}
                     height={!mobile ? 453 : 375}
-                    src="/images/fotos.png"
+                    src="/images/clientsPhotos.webp"
                     alt="hair cutting photos"
                 />
                 <S.Content>

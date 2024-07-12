@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import testimonialsBg from '../../../public/images/bgTestimonials.png';
-import mask from '../../../public/images/mask.png';
-import mask2 from '../../../public/images/mask2.png';
+import testimonialsBg from '../../../public/images/bgTestimonials.webp';
+import mask from '../../../public/images/mask.webp';
+import mask2 from '../../../public/images/mask2.webp';
 
 export const Section = styled.section`
     background: url(${testimonialsBg.src}) center/cover no-repeat, rgba(9, 9, 9, 0.6);
