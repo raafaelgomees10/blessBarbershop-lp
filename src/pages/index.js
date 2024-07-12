@@ -1,15 +1,13 @@
 import Head from 'next/head';
-import { Inter } from 'next/font/google';
-import HomeBless from '@/components/home';
-import About from '@/components/about';
-import BookNow from '@/components/bookNow';
-import Services from '@/components/servicesSec';
-import Image from 'next/image';
 import Team from '@/components/team';
-import Testimonials from '@/components/testimonials';
+import About from '@/components/about';
 import Footer from '@/components/footer';
+import HomeBless from '@/components/home';
+import BookNow from '@/components/bookNow';
 import Grooming from '@/components/grooming';
-import Header from '@/components/header';
+import Services from '@/components/servicesSec';
+import Loading from '@/components/loading/loading';
+import Testimonials from '@/components/testimonials';
 
 export default function Home() {
     return (
@@ -21,6 +19,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
+                <Loading />
                 <HomeBless />
                 <About />
                 <BookNow />

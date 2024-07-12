@@ -8,7 +8,7 @@ export const Container = styled.header`
     padding: 24px 0;
     top: 0;
     position: fixed;
-    z-index: 1000;
+    z-index: 99;
     transition: padding 0.3s;
 
     &.scrolled {
