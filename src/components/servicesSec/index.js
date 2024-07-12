@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import * as S from './styles';
-import Button1 from '../buttons/button1';
 import Button2 from '../buttons/button2';
+
 const Services = () => {
     const [serviceSelected, setServiceSelected] = useState('haircuts');
 

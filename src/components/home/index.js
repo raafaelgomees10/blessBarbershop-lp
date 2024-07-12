@@ -2,7 +2,6 @@ import React from 'react';
 import Icon from '../icons';
 import * as S from './styles';
 import Header from '../header';
-import Button2 from '../buttons/button2';
 import Button1 from '../buttons/button1';
 
 const HomeBless = () => {
@@ -23,6 +22,9 @@ const HomeBless = () => {
                     <Button1 margin="48px 0 80px">Book a haircut</Button1>
 
                     <S.Social>
+                        <div>
+                            <Icon icon="instagram" height="24px" width="24px" />
+                        </div>
                         <div>
                             <Icon icon="tiktok" height="24px" width="24px" />
                         </div>

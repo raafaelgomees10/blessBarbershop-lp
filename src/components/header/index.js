@@ -38,11 +38,16 @@ const Header = () => {
         <>
             <S.Container ref={headerRef} className={isScrolled ? 'scrolled' : ''}>
                 {mobile && (
-                    <S.MobileButton
+                    <S.MobileButton2
                         className={mobileMenu && 'active'}
                         aria-label="Menu"
                         onClick={() => setMobileMenu(!mobileMenu)}
-                    />
+                    >
+                        <S.Inner>
+                            <S.Line className="line1" />
+                            <S.Line className="line2" />
+                        </S.Inner>
+                    </S.MobileButton2>
                 )}
 
                 <S.Nav

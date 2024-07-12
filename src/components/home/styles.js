@@ -71,10 +71,7 @@ export const Text = styled.p`
     opacity: 0.8;
 
     @media (max-width: 767px) {
-        font-size: 1.4rem;
-        color: #000;
         width: 310px;
-
         opacity: 1;
     }
 `;
@@ -87,13 +84,19 @@ export const Social = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 105px;
+    width: 158px;
     padding-bottom: 80px;
 
     > div {
+        cursor: pointer;
+        border: 2px solid #1f1811;
         border-radius: 50%;
         padding: 8px;
         background: ${(props) => props.theme.colors.secondary};
+        transition: 0.3s all ease;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
     @media (max-width: 767px) {

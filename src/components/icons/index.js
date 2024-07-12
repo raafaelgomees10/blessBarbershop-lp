@@ -1,11 +1,12 @@
 import React from 'react';
-import Quote from './components/quote';
-import Tiktok from './components/tiktok';
-import Facebook from './components/facebook';
 import Clock from './components/clock';
 import Phone from './components/phone';
 import Email from './components/email';
+import Quote from './components/quote';
 import Barber from './components/barber';
+import Tiktok from './components/tiktok';
+import Facebook from './components/facebook';
+import Instagram from './components/instagram';
 
 const Icon = ({ icon, height, width, color }) => {
     switch (icon) {
@@ -14,6 +15,9 @@ const Icon = ({ icon, height, width, color }) => {
 
         case 'tiktok':
             return <Tiktok height={height} width={width} color={color} />;
+
+        case 'instagram':
+            return <Instagram height={height} width={width} color={color} />;
 
         case 'quote':
             return <Quote height={height} width={width} color={color} />;

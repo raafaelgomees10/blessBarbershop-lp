@@ -25,7 +25,7 @@ const Footer = () => {
                                 />
                                 <div>
                                     <S.BlockItem className="hasIcon">
-                                        <strong>Mon - Thu</strong> - 9am - 6pm
+                                        <strong>Mon - Thu </strong> - 9am - 6pm
                                     </S.BlockItem>
                                     <S.BlockItem>
                                         <strong>Friday</strong> - 9am - 5pm

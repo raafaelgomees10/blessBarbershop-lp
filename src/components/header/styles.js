@@ -25,7 +25,6 @@ export const Container = styled.header`
 
         &.scrolled {
             background-color: unset;
-            /* background: rgba(0, 0, 0, 1.8); */
         }
     }
 `;
@@ -128,8 +127,15 @@ export const Span = styled.span`
 export const LogoContainer = styled.div`
     transition: transform 0.3s;
 
-    ${Container}.scrolled & {
-        transform: scale(0.8);
+    @media (min-width: 768px) {
+        ${Container}.scrolled & {
+            transform: scale(0.8);
+        }
+    }
+    @media (max-width: 767px) {
+        ${Container} & {
+            transform: scale(1.2);
+        }
     }
 `;
 
@@ -168,5 +174,54 @@ export const MobileButton = styled.div`
             height: 4px;
             box-shadow: 0 8px currentColor, 0 -8px currentColor;
         }
+    }
+`;
+
+export const MobileButton2 = styled.div`
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    padding: 16px;
+    transition: background-color 0.2s;
+    z-index: 999;
+
+    &.active .line1 {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        width: 40px;
+    }
+
+    &.active .line2 {
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+        width: 40px;
+    }
+`;
+
+export const Inner = styled.div`
+    position: relative;
+    width: 40px;
+    height: 16px;
+`;
+
+export const Line = styled.span`
+    display: block;
+    position: absolute;
+    height: 4px;
+    border-radius: 80px;
+    background-color: #f2dac2;
+    transition: transform 0.2s ease-in-out, width 0.2s ease-in-out, top 0.2s ease-in-out,
+        background-color 0.2s ease-in-out;
+
+    &.line1 {
+        top: 0;
+        width: 38px;
+    }
+    &.line2 {
+        bottom: 0;
+        width: 30px;
+        background-color: #977656;
     }
 `;

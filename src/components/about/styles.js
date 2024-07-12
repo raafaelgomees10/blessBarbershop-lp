@@ -75,6 +75,10 @@ export const Title = styled.h2`
         left: 130px;
     }
 
+    @media (min-width: 1920px) {
+        left: -70px;
+    }
+
     @media (max-width: 1199px) {
         left: -30px;
         top: 0;
@@ -83,6 +87,7 @@ export const Title = styled.h2`
             left: 180px;
         }
     }
+
     @media (max-width: 767px) {
         > span {
             left: 110px;

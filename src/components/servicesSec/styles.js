@@ -92,6 +92,10 @@ export const ServicesList = styled.ul`
                 right: -25px;
                 transform: rotate(45deg);
 
+                @media (min-width: 1920px) {
+                    right: -28px;
+                }
+
                 @media (min-width: 768px) and (max-width: 1199px) {
                     right: -21px;
                 }
