@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Button2 = ({ children, margin }) => {
+const Button2 = ({ children, margin, ...props }) => {
     return (
-        <Button aria-label="button2" $existsMargin={margin}>
+        <Button aria-label="button2" $existsMargin={margin} {...props}>
             {children}
             <Horizontal />
             <Vertical />

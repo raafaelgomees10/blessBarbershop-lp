@@ -1,44 +1,55 @@
-TODO LIST
-fade in out menu mobile
-IMAGEM SESSAO TESTIMONIALS
+# :barber: Bless Barber Shop Landing Page :scissors:
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This project is a sleek and modern landing page designed for a barber shop, developed using Next.js. It provides an engaging and user-friendly interface that highlights the services offered by the barber shop, showcases the team, and shares customer testimonials. The goal is to create a memorable online presence that reflects the quality and style of the barber shop.
 
-## Getting Started
+The design and development of the landing page aimed to create a cohesive visual identity for the brand, making it appealing and professional.
 
-First, run the development server:
+Check out the project and let me know your thoughts. [Click here](https://blessbarbershop.netlify.app/).
+
+## :technologist: Technologies
+
+-   [Next.js](https://nextjs.org/)
+-   [React](https://reactjs.org/)
+-   [Styled-components](https://styled-components.com/)
+-   [SplideJs](https://splidejs.com/integration/react-splide/)
+-   [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)
+-   [React Scroll](https://www.npmjs.com/package/react-scroll)
+-   JavaScript
+-   CSS
+-   HTML
+
+## About
+
+The barber shop landing page provides a comprehensive view of the services, team, and customer experiences. It aims to attract potential customers with its vintage yet modern design and smooth user experience.
+
+### Features
+
+-   **Services Section**: Detailed descriptions of services offered.
+-   **Team Section**: Profiles of the barber shop team members.
+-   **Testimonials**: Real customer testimonials to build trust and credibility.
+-   **Smooth Scroll Navigation**: Easy navigation between sections with smooth scrolling effects.
+-   **Responsive Design**: Optimized for all devices, ensuring a great user experience on both desktop and mobile.
+
+## Setup
+
+Follow these steps to run the project locally:
+
+1. Clone the repository
+2. Install dependencies using npm or yarn
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+   npm install
+   # or
+   yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. run in terminal `yarn dev`
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Contact
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Take a look at my [portfolio](https://rafaelgomes.netlify.app?utm_source=github&utm_medium=readme_project&utm_campaign=heroFinder).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<a href="https://www.linkedin.com/in/dev-rafael-gomes/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" width="30" heigth="30" alt="Rafael-linkedn"></a>
+<a href="https://www.facebook.com/rafael.gomes.961pl/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/facebook/facebook-original.svg" width="30" heigth="30" alt="Rafael-facebook"></a>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+:copyright: Developed with 💜 by **[Rafael Gomes](https://rafaelgomes.netlify.app?utm_source=github&utm_medium=readme_project&utm_campaign=lp_blessbarbershop)**

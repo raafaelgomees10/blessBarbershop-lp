@@ -15,8 +15,11 @@ const About = () => {
                     height={!mobile ? 453 : 375}
                     src="/images/clientsPhotos.webp"
                     alt="hair cutting photos"
+                    data-aos="fade-right"
+                    data-aos-duration="1100"
                 />
-                <S.Content>
+
+                <S.Content data-aos="fade-left" data-aos-duration="1100">
                     <S.Title className="sectionTitle">
                         About
                         <span>About Us</span>

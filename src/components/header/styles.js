@@ -28,22 +28,23 @@ export const Container = styled.header`
         }
     }
 `;
-
 export const Nav = styled.nav`
     max-width: 900px;
     width: 100%;
 
     &.navMobile {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 0.1rem;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.8);
         border-radius: 0.2rem;
-        transform: translateX(-10px);
+        display: block;
+        height: 100vh;
         opacity: 0;
+        position: absolute;
         pointer-events: none;
+        right: 0;
+        top: 0;
+        transform: translateX(100%);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        width: 100%;
 
         > a,
         > button {
@@ -63,16 +64,9 @@ export const Nav = styled.nav`
     }
 
     &.navMobileActive {
-        transition: all 0.3s ease 0s;
-        transform: initial;
+        transform: translateX(0);
         opacity: 1;
-        z-index: 100;
-        pointer-events: initial;
-
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.8);
-        height: 100vh;
-        width: 100vw;
+        pointer-events: all;
     }
 `;
 
@@ -144,40 +138,6 @@ export const Spacer = styled.div`
 `;
 
 export const MobileButton = styled.div`
-    background: transparent;
-    height: 40px;
-    color: #c8a47e;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    transition: 0.1s;
-    cursor: pointer;
-    z-index: 999;
-
-    &::after {
-        content: '';
-        display: block;
-        width: 1.2rem;
-        height: 2px;
-        background-color: currentColor;
-        border-radius: 2px;
-        box-shadow: 0 6px currentColor, 0 -6px currentColor;
-        transition: 0.2s;
-    }
-
-    &.active {
-        &::after {
-            transform: rotate(90deg);
-            width: 4px;
-            height: 4px;
-            box-shadow: 0 8px currentColor, 0 -8px currentColor;
-        }
-    }
-`;
-
-export const MobileButton2 = styled.div`
     display: flex;
     cursor: pointer;
     align-items: center;

@@ -60,7 +60,7 @@ const Overlay = styled.div`
     transform: scaleY(0);
     transition: all 1.2s cubic-bezier(0.55, 0.02, 0.1, 0.9);
     transform-origin: top center;
-    transition-delay: 2.4s;
+    transition-delay: 2s;
 
     ${Section}.active & {
         transform: scaleY(1);
@@ -96,7 +96,7 @@ const LogoContainer = styled.div`
     top: 0;
     opacity: 0;
     transition: all 1.6s cubic-bezier(0.55, 0.02, 0.1, 0.9);
-    transition-delay: 1.8s;
+    transition-delay: 1.6s;
 
     ${Section}.active & {
         top: 50%;

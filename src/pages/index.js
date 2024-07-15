@@ -1,3 +1,6 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 import Team from '@/components/team';
 import About from '@/components/about';
 import Footer from '@/components/footer';
@@ -10,6 +13,10 @@ import Loading from '@/components/loading/loading';
 import Testimonials from '@/components/testimonials';
 
 export default function Home() {
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
         <>
             <Meta

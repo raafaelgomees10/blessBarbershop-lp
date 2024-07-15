@@ -39,7 +39,8 @@ const Testimonials = () => {
                     Testimonials
                     <span>Testimonials</span>
                 </S.Title>
-                <S.Box>
+
+                <S.Box data-aos="zoom-out" data-aos-duration="1500">
                     <S.Text>What Our Clients Say</S.Text>
                     <S.Descrpition>
                         See what our satisfied customers have to say about our services.

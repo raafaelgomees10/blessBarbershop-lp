@@ -62,7 +62,7 @@ const Services = () => {
                 <S.Content>
                     <S.CutsList>
                         {services[serviceSelected].map((item) => (
-                            <li key={item.name}>
+                            <li data-aos="fade-up" key={item.name}>
                                 <S.Cut>{item.name}</S.Cut>
                                 <S.Line />
                                 <S.Price>€{item.price}</S.Price>
